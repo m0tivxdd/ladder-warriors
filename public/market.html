@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ladder Warriors - Market</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/cards.css">
+    <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Ladder Warriors</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="market.html" class="active">Market</a></li>
+                <li><a href="collection.html">Collection</a></li>
+                <li><a href="packs.html">Packs</a></li>
+            </ul>
+        </nav>
+        <div class="user-area">
+            <div class="currency-display">
+                <span id="currency-amount">0</span>
+                <span class="currency-icon">💰</span>
+            </div>
+            <div class="auth-buttons">
+                <a href="login.html" id="login-btn" class="btn">Login</a>
+                <a href="register.html" id="register-btn" class="btn">Register</a>
+                <button id="logout-btn" class="btn hidden">Logout</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="market-header">
+            <h2>Player Market</h2>
+            <div class="auth-message hidden" id="login-required-message">
+                <p>Please <a href="login.html">login</a> or <a href="register.html">register</a> to participate in the market.</p>
+            </div>
+            
+            <div class="market-tabs">
+                <button class="tab-btn active" id="all-listings-btn">All Listings</button>
+                <button class="tab-btn" id="my-listings-btn">My Listings</button>
+            </div>
+            
+            <div class="market-filters">
+                <div class="filter-group">
+                    <label for="market-rarity-filter">Rarity</label>
+                    <select id="market-rarity-filter">
+                        <option value="all">All Rarities</option>
+                        <option value="common">Common</option>
+                        <option value="uncommon">Uncommon</option>
+                        <option value="rare">Rare</option>
+                        <option value="epic">Epic</option>
+                        <option value="legendary">Legendary</option>
+                    </select>
+                </div>
+                
+                <div class="filter-group">
+                    <label for="market-position-filter">Position</label>
+                    <select id="market-position-filter">
+                        <option value="all">All Positions</option>
+                        <option value="Top">Top</option>
+                        <option value="Jungle">Jungle</option>
+                        <option value="Mid">Mid</option>
+                        <option value="ADC">ADC</option>
+                        <option value="Support">Support</option>
+                    </select>
+                </div>
+                
+                <div class="filter-group">
+                    <label for="market-sort-by">Sort By</label>
+                    <select id="market-sort-by">
+                        <option value="price-asc">Price (Low to High)</option>
+                        <option value="price-desc">Price (High to Low)</option>
+                        <option value="rarity">Rarity</option>
+                        <option value="lp">League Points</option>
+                        <option value="recent">Most Recent</option>
+                    </select>
+                </div>
+                
+                <div class="filter-group">
+                    <label for="market-search">Search</label>
+                    <input type="text" id="market-search" placeholder="Search by player name">
+                </div>
+                
+                <div class="filter-group price-range">
+                    <label>Price Range</label>
+                    <div class="price-inputs">
+                        <input type="number" id="min-price" placeholder="Min">
+                        <span>to</span>
+                        <input type="number" id="max-price" placeholder="Max">
+                        <button id="apply-price" class="btn">Apply</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="market-content">
+            <div class="cards-grid" id="market-listings">
+                <!-- Listings will be loaded here -->
+                <div class="loading">Loading market listings...</div>
+            </div>
+            
+            <div class="no-listings-message hidden" id="no-listings-message">
+                <p>No listings match your filters. Try adjusting your search criteria.</p>
+            </div>
+            
+            <div class="no-my-listings-message hidden" id="no-my-listings-message">
+                <p>You don't have any active listings. Visit your <a href="collection.html">Collection</a> to list cards for sale.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Ladder Warriors - League of Legends Challenger Cards</p>
+        
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Check authentication status
+            checkAuthStatus().then(result => {
+                if (result.isLoggedIn) {
+                    updateUserInterface();
+                    loadAllListings();
+                    
+                    // Show my listings button
+                    document.getElementById('my-listings-btn').classList.remove('hidden');
+                } else {
+                    // Show login required message
+                    document.getElementById('login-required-message').classList.remove('hidden');
+                    document.getElementById('my-listings-btn').classList.add('hidden');
+                }
+            });
+            
+            // Variables to store listings data
+            let allListings = [];
+            let myListings = [];
+            let currentView = 'all'; // 'all' or 'my'
+            
+            // Event listeners for tab buttons
+            const allListingsBtn = document.getElementById('all-listings-btn');
+            const myListingsBtn = document.getElementById('my-listings-btn');
+            
+            allListingsBtn.addEventListener('click', () => {
+                allListingsBtn.classList.add('active');
+                myListingsBtn.classList.remove('active');
+                currentView = 'all';
+                displayListings(filterListings(allListings));
+            });
+            
+            myListingsBtn.addEventListener('click', () => {
+                myListingsBtn.classList.add('active');
+                allListingsBtn.classList.remove('active');
+                currentView = 'my';
+                loadMyListings();
+            });
+            
+            // Event listeners for filters
+            const rarityFilter = document.getElementById('market-rarity-filter');
+            const positionFilter = document.getElementById('market-position-filter');
+            const sortBy = document.getElementById('market-sort-by');
+            const search = document.getElementById('market-search');
+            const applyPriceBtn = document.getElementById('apply-price');
+            
+            rarityFilter.addEventListener('change', applyFilters);
+            positionFilter.addEventListener('change', applyFilters);
+            sortBy.addEventListener('change', applyFilters);
+            search.addEventListener('input', applyFilters);
+            applyPriceBtn.addEventListener('click', applyFilters);
+            
+            // Load all listings from the server
+            async function loadAllListings() {
+                try {
+                    const response = await fetch('/api/market', {
+                        method: 'GET',
+                        credentials: 'include'
+                    });
+                    
+                    if (response.ok) {
+                        allListings = await response.json();
+                        displayListings(allListings);
+                    } else {
+                        console.error('Failed to load market listings');
+                    }
+                } catch (error) {
+                    console.error('Error loading market listings:', error);
+                }
+            }
+            
+            // Load user's listings from the server
+            async function loadMyListings() {
+                try {
+                    const response = await fetch('/api/market/my-listings', {
+                        method: 'GET',
+                        credentials: 'include'
+                    });
+                    
+                    if (response.ok) {
+                        myListings = await response.json();
+                        displayListings(myListings, true);
+                    } else {
+                        console.error('Failed to load your listings');
+                    }
+                } catch (error) {
+                    console.error('Error loading your listings:', error);
+                }
+            }
+            
+            // Apply filters and return filtered listings
+            function filterListings(listings) {
+                const rarity = rarityFilter.value;
+                const position = positionFilter.value;
+                const sort = sortBy.value;
+                const searchTerm = search.value.toLowerCase();
+                const minPrice = parseInt(document.getElementById('min-price').value) || 0;
+                const maxPrice = parseInt(document.getElementById('max-price').value) || Number.MAX_SAFE_INTEGER;
+                
+                // Filter listings
+                let filtered = listings.filter(listing => {
+                    // Rarity filter
+                    if (rarity !== 'all' && listing.player.rarity !== rarity) {
+                        return false;
+                    }
+                    
+                    // Position filter
+                    if (position !== 'all' && listing.player.position !== position) {
+                        return false;
+                    }
+                    
+                    // Search filter
+                    if (searchTerm && !listing.player.riotId.toLowerCase().includes(searchTerm)) {
+                        return false;
+                    }
+                    
+                    // Price range filter
+                    if (listing.price < minPrice || listing.price > maxPrice) {
+                        return false;
+                    }
+                    
+                    return true;
+                });
+                
+                // Sort listings
+                filtered.sort((a, b) => {
+                    switch (sort) {
+                        case 'price-asc':
+                            return a.price - b.price;
+                        
+                        case 'price-desc':
+                            return b.price - a.price;
+                        
+                        case 'rarity':
+                            // Sort by rarity (legendary > epic > rare > uncommon > common)
+                            const rarityOrder = { 
+                                legendary: 5, 
+                                epic: 4, 
+                                rare: 3, 
+                                uncommon: 2, 
+                                common: 1 
+                            };
+                            return rarityOrder[b.player.rarity] - rarityOrder[a.player.rarity];
+                        
+                        case 'lp':
+                            return b.player.leaguePoints - a.player.leaguePoints;
+                        
+                        case 'recent':
+                            return new Date(b.listedAt) - new Date(a.listedAt);
+                        
+                        default:
+                            return 0;
+                    }
+                });
+                
+                return filtered;
+            }
+            
+            // Apply filters on button click or change
+            function applyFilters() {
+                if (currentView === 'all') {
+                    const filtered = filterListings(allListings);
+                    displayListings(filtered);
+                } else {
+                    const filtered = filterListings(myListings);
+                    displayListings(filtered, true);
+                }
+            }
+            
+            // Display listings on the page
+            function displayListings(listings, isMyListings = false) {
+                const listingsContainer = document.getElementById('market-listings');
+                listingsContainer.innerHTML = '';
+                
+                // Hide/show appropriate messages
+                document.getElementById('no-listings-message').classList.add('hidden');
+                document.getElementById('no-my-listings-message').classList.add('hidden');
+                
+                // Check if there are any listings
+                if (listings.length === 0) {
+                    if (isMyListings) {
+                        document.getElementById('no-my-listings-message').classList.remove('hidden');
+                    } else {
+                        document.getElementById('no-listings-message').classList.remove('hidden');
+                    }
+                    return;
+                }
+                
+                // Create listing cards
+                listings.forEach(listing => {
+                    const listingCard = createListingCard(listing, isMyListings);
+                    listingsContainer.appendChild(listingCard);
+                });
+            }
+            
+            // Create a card for a market listing
+            function createListingCard(listing, isMyListing) {
+                const cardWrapper = document.createElement('div');
+                cardWrapper.className = 'listing-card';
+                cardWrapper.setAttribute('data-listing-id', listing._id);
+                
+                // Create the player card
+                const card = createCardElement(listing.player);
+                
+                // Create listing info
+                const listingInfo = document.createElement('div');
+                listingInfo.className = 'listing-info';
+                
+                listingInfo.innerHTML = `
+                    <div class="listing-price">${listing.price} 💰</div>
+                    <div class="listing-seller">Seller: ${isMyListing ? 'You' : listing.seller.username}</div>
+                    <div class="listing-date">Listed: ${formatDate(listing.listedAt)}</div>
+                `;
+                
+                // Create action buttons
+                const actionButtons = document.createElement('div');
+                actionButtons.className = 'listing-actions';
+                
+                if (isMyListing) {
+                    // Cancel listing button for user's own listings
+                    const cancelBtn = document.createElement('button');
+                    cancelBtn.className = 'btn';
+                    cancelBtn.textContent = 'Cancel Listing';
+                    cancelBtn.addEventListener('click', () => cancelListing(listing._id));
+                    
+                    actionButtons.appendChild(cancelBtn);
+                } else if (isLoggedIn()) {
+                    // Buy button for other users' listings
+                    const buyBtn = document.createElement('button');
+                    buyBtn.className = 'btn btn-primary';
+                    buyBtn.textContent = 'Buy Card';
+                    buyBtn.addEventListener('click', () => buyCard(listing));
+                    
+                    actionButtons.appendChild(buyBtn);
+                }
+                
+                // Assemble the listing card
+                cardWrapper.appendChild(card);
+                cardWrapper.appendChild(listingInfo);
+                cardWrapper.appendChild(actionButtons);
+                
+                return cardWrapper;
+            }
+            
+            // Format date function
+            function formatDate(dateString) {
+                const date = new Date(dateString);
+                return date.toLocaleDateString('en-US', { 
+                    year: 'numeric', 
+                    month: 'short', 
+                    day: 'numeric' 
+                });
+            }
+            
+            // Cancel a listing
+            async function cancelListing(listingId) {
+                if (!confirm('Are you sure you want to cancel this listing?')) {
+                    return;
+                }
+                
+                try {
+                    const response = await fetch(`/api/market/cancel/${listingId}`, {
+                        method: 'POST',
+                        credentials: 'include'
+                    });
+                    
+                    if (response.ok) {
+                        // Remove from my listings
+                        myListings = myListings.filter(listing => listing._id !== listingId);
+                        
+                        // Remove from all listings if present
+                        allListings = allListings.filter(listing => listing._id !== listingId);
+                        
+                        // Update display
+                        document.querySelector(`.listing-card[data-listing-id="${listingId}"]`).remove();
+                        
+                        // Show message if no more listings
+                        if (currentView === 'my' && myListings.length === 0) {
+                            document.getElementById('no-my-listings-message').classList.remove('hidden');
+                        }
+                        
+                        alert('Listing cancelled successfully');
+                    } else {
+                        const error = await response.json();
+                        alert(error.message || 'Failed to cancel listing');
+                    }
+                } catch (error) {
+                    console.error('Error cancelling listing:', error);
+                    alert('An error occurred while cancelling the listing');
+                }
+            }
+            
+            // Buy a card
+            async function buyCard(listing) {
+                if (!isLoggedIn()) {
+                    alert('Please login to buy cards');
+                    return;
+                }
+                
+                if (userCurrency < listing.price) {
+                    alert('You do not have enough currency to buy this card');
+                    return;
+                }
+                
+                if (!confirm(`Are you sure you want to buy this card for ${listing.price} 💰?`)) {
+                    return;
+                }
+                
+                try {
+                    const response = await fetch(`/api/market/buy/${listing._id}`, {
+                        method: 'POST',
+                        credentials: 'include'
+                    });
+                    
+                    if (response.ok) {
+                        const result = await response.json();
+                        
+                        // Update user currency
+                        userCurrency = result.newBalance;
+                        document.getElementById('currency-amount').textContent = userCurrency;
+                        
+                        // Remove from listings
+                        allListings = allListings.filter(item => item._id !== listing._id);
+                        
+                        // Update display
+                        document.querySelector(`.listing-card[data-listing-id="${listing._id}"]`).remove();
+                        
+                        // Show message if no more listings
+                        if (allListings.length === 0) {
+                            document.getElementById('no-listings-message').classList.remove('hidden');
+                        }
+                        
+                        alert('Card purchased successfully!');
+                    } else {
+                        const error = await response.json();
+                        alert(error.message || 'Failed to purchase card');
+                    }
+                } catch (error) {
+                    console.error('Error purchasing card:', error);
+                    alert('An error occurred while purchasing the card');
+                }
+            }
+        });
+    </script>
+    
+    <style>
+        /* Market page specific styles */
+        .market-header {
+            margin-bottom: 30px;
+        }
+        
+        .market-tabs {
+            display: flex;
+            margin: 20px 0;
+            border-bottom: 1px solid var(--card-border-color);
+        }
+        
+        .tab-btn {
+            background-color: transparent;
+            border: none;
+            color: var(--text-color);
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 16px;
+            border-bottom: 3px solid transparent;
+        }
+        
+        .tab-btn.active {
+            color: var(--secondary-color);
+            border-bottom-color: var(--secondary-color);
+            font-weight: bold;
+        }
+        
+        .market-filters {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin: 20px 0;
+            padding: 15px;
+            background-color: var(--card-bg-color);
+            border-radius: 8px;
+            border: 1px solid var(--card-border-color);
+        }
+        
+        .filter-group {
+            display: flex;
+            flex-direction: column;
+            min-width: 150px;
+            flex: 1;
+        }
+        
+        .filter-group label {
+            margin-bottom: 5px;
+            font-size: 14px;
+        }
+        
+        .filter-group select, .filter-group input {
+            padding: 8px;
+            border-radius: 4px;
+            border: 1px solid var(--card-border-color);
+            background-color: rgba(255, 255, 255, 0.05);
+            color: var(--text-color);
+        }
+        
+        .filter-group select:focus, .filter-group input:focus {
+            outline: none;
+            border-color: var(--accent-color);
+        }
+        
+        .price-inputs {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        
+        .price-inputs input {
+            width: 80px;
+        }
+        
+        .price-inputs span {
+            margin: 0 5px;
+            opacity: 0.8;
+        }
+        
+        .price-range {
+            flex-basis: 100%;
+        }
+        
+        .listing-card {
+            background-color: var(--card-bg-color);
+            border-radius: 10px;
+            border: 1px solid var(--card-border-color);
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .listing-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+        }
+        
+        .listing-info {
+            padding: 15px;
+            border-top: 1px solid rgba(200, 155, 60, 0.3);
+        }
+        
+        .listing-price {
+            font-size: 24px;
+            font-weight: bold;
+            color: var(--secondary-color);
+            margin-bottom: 10px;
+        }
+        
+        .listing-seller, .listing-date {
+            font-size: 14px;
+            opacity: 0.8;
+            margin-bottom: 5px;
+        }
+        
+        .listing-actions {
+            padding: 15px;
+            border-top: 1px solid rgba(200, 155, 60, 0.3);
+            display: flex;
+            justify-content: center;
+        }
+        
+        .listing-actions button {
+            width: 100%;
+        }
+        
+        .no-listings-message, .no-my-listings-message {
+            text-align: center;
+            padding: 30px;
+            background-color: rgba(255, 255, 255, 0.05);
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+        
+        /* Modal styles */
+        .modal-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .modal-container.fade-in {
+            opacity: 1;
+        }
+
+        .modal-container.fade-out {
+            opacity: 0;
+        }
+
+        .modal {
+            background-color: var(--card-bg-color);
+            border-radius: 10px;
+            width: 90%;
+            max-width: 500px;
+            border: 2px solid var(--secondary-color);
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+            overflow: hidden;
+        }
+
+        .modal-header {
+            padding: 15px 20px;
+            background-color: rgba(10, 20, 40, 0.8);
+            border-bottom: 1px solid var(--secondary-color);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .modal-header h2 {
+            margin: 0;
+            color: var(--secondary-color);
+            font-size: 20px;
+        }
+
+        .close-btn {
+            background: none;
+            border: none;
+            font-size: 24px;
+            color: var(--text-color);
+            cursor: pointer;
+            opacity: 0.7;
+            transition: opacity 0.3s ease;
+        }
+
+        .close-btn:hover {
+            opacity: 1;
+        }
+
+        .modal-body {
+            padding: 20px;
+        }
+
+        .modal-card-info {
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid var(--card-border-color);
+        }
+
+        .modal-card-info p {
+            margin: 5px 0;
+        }
+
+        .modal-footer {
+            padding: 15px 20px;
+            background-color: rgba(10, 20, 40, 0.5);
+            border-top: 1px solid var(--card-border-color);
+            display: flex;
+            justify-content: flex-end;
+            gap: 10px;
+        }
+
+        /* Error container styles */
+        .error-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 2000;
+        }
+
+        .error-content {
+            background-color: var(--card-bg-color);
+            border: 2px solid var(--error-color);
+            border-radius: 8px;
+            padding: 20px;
+            max-width: 400px;
+            text-align: center;
+        }
+
+        .error-content p {
+            margin-bottom: 20px;
+            color: var(--error-color);
+        }
+
+        .error-content button {
+            margin-top: 10px;
+        }
+    </style>
+</body>
+</html>

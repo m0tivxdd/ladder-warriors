@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ladder Warriors - Shop</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/cards.css">
+    <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Ladder Warriors</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html" class="active">Shop</a></li>
+                <li><a href="market.html">Market</a></li>
+                <li><a href="collection.html">Collection</a></li>
+                <li><a href="packs.html">Packs</a></li>
+            </ul>
+        </nav>
+        <div class="user-area">
+            <div class="currency-display">
+                <span id="currency-amount">0</span>
+                <span class="currency-icon">💰</span>
+            </div>
+            <div class="auth-buttons">
+                <a href="login.html" id="login-btn" class="btn">Login</a>
+                <a href="register.html" id="register-btn" class="btn">Register</a>
+                <button id="logout-btn" class="btn hidden">Logout</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section>
+            <h2>Card Packs</h2>
+            <p class="section-description">Expand your collection by purchasing card packs containing EUW Challenger players.</p>
+            
+            <div class="auth-message hidden" id="login-required-message">
+                <p>Please <a href="login.html">login</a> or <a href="register.html">register</a> to purchase packs.</p>
+            </div>
+            
+            <div class="packs-container">
+                <div class="pack-card bronze">
+                    <div class="pack-icon">📦</div>
+                    <h3 class="pack-name">Bronze Pack</h3>
+                    <p class="pack-description">Contains 3 random players</p>
+                    <p class="pack-guarantee">At least 1 uncommon or better</p>
+                    <div class="pack-price">100 💰</div>
+                    <div class="pack-rarity-odds">
+                        <div class="rarity-bar">
+                            <div class="rarity-fill common" style="width: 75%;"></div>
+                            <div class="rarity-fill uncommon" style="width: 20%;"></div>
+                            <div class="rarity-fill rare" style="width: 4%;"></div>
+                            <div class="rarity-fill epic" style="width: 1%;"></div>
+                            <div class="rarity-fill legendary" style="width: 0%;"></div>
+                        </div>
+                        <div class="rarity-labels">
+                            <span class="rarity-common">75%</span>
+                            <span class="rarity-uncommon">20%</span>
+                            <span class="rarity-rare">4%</span>
+                            <span class="rarity-epic">1%</span>
+                            <span class="rarity-legendary">0%</span>
+                        </div>
+                    </div>
+                    <button class="btn buy-pack-btn" data-pack-type="bronze">Buy Pack</button>
+                </div>
+                
+                <div class="pack-card silver">
+                    <div class="pack-icon">📦</div>
+                    <h3 class="pack-name">Silver Pack</h3>
+                    <p class="pack-description">Contains 3 random players</p>
+                    <p class="pack-guarantee">At least 1 rare or better</p>
+                    <div class="pack-price">250 💰</div>
+                    <div class="pack-rarity-odds">
+                        <div class="rarity-bar">
+                            <div class="rarity-fill common" style="width: 50%;"></div>
+                            <div class="rarity-fill uncommon" style="width: 35%;"></div>
+                            <div class="rarity-fill rare" style="width: 12%;"></div>
+                            <div class="rarity-fill epic" style="width: 2.5%;"></div>
+                            <div class="rarity-fill legendary" style="width: 0.5%;"></div>
+                        </div>
+                        <div class="rarity-labels">
+                            <span class="rarity-common">50%</span>
+                            <span class="rarity-uncommon">35%</span>
+                            <span class="rarity-rare">12%</span>
+                            <span class="rarity-epic">2.5%</span>
+                            <span class="rarity-legendary">0.5%</span>
+                        </div>
+                    </div>
+                    <button class="btn buy-pack-btn" data-pack-type="silver">Buy Pack</button>
+                </div>
+                
+                <div class="pack-card gold">
+                    <div class="pack-icon">📦</div>
+                    <h3 class="pack-name">Gold Pack</h3>
+                    <p class="pack-description">Contains 3 random players</p>
+                    <p class="pack-guarantee">At least 1 epic or better</p>
+                    <div class="pack-price">500 💰</div>
+                    <div class="pack-rarity-odds">
+                        <div class="rarity-bar">
+                            <div class="rarity-fill common" style="width: 25%;"></div>
+                            <div class="rarity-fill uncommon" style="width: 40%;"></div>
+                            <div class="rarity-fill rare" style="width: 25%;"></div>
+                            <div class="rarity-fill epic" style="width: 8%;"></div>
+                            <div class="rarity-fill legendary" style="width: 2%;"></div>
+                        </div>
+                        <div class="rarity-labels">
+                            <span class="rarity-common">25%</span>
+                            <span class="rarity-uncommon">40%</span>
+                            <span class="rarity-rare">25%</span>
+                            <span class="rarity-epic">8%</span>
+                            <span class="rarity-legendary">2%</span>
+                        </div>
+                    </div>
+                    <button class="btn buy-pack-btn" data-pack-type="gold">Buy Pack</button>
+                </div>
+                
+                <div class="pack-card platinum">
+                    <div class="pack-icon">📦</div>
+                    <h3 class="pack-name">Platinum Pack</h3>
+                    <p class="pack-description">Contains 3 random players</p>
+                    <p class="pack-guarantee">Guaranteed 1 legendary</p>
+                    <div class="pack-price">1000 💰</div>
+                    <div class="pack-rarity-odds">
+                        <div class="rarity-bar">
+                            <div class="rarity-fill common" style="width: 10%;"></div>
+                            <div class="rarity-fill uncommon" style="width: 30%;"></div>
+                            <div class="rarity-fill rare" style="width: 35%;"></div>
+                            <div class="rarity-fill epic" style="width: 20%;"></div>
+                            <div class="rarity-fill legendary" style="width: 5%;"></div>
+                        </div>
+                        <div class="rarity-labels">
+                            <span class="rarity-common">10%</span>
+                            <span class="rarity-uncommon">30%</span>
+                            <span class="rarity-rare">35%</span>
+                            <span class="rarity-epic">20%</span>
+                            <span class="rarity-legendary">5%</span>
+                        </div>
+                    </div>
+                    <button class="btn buy-pack-btn" data-pack-type="platinum">Buy Pack</button>
+                </div>
+                
+                <div class="pack-card diamond">
+                    <div class="pack-icon">💎</div>
+                    <h3 class="pack-name">Diamond Pack</h3>
+                    <p class="pack-description">Contains 3 top players</p>
+                    <p class="pack-guarantee">3 epic or better, with at least 1 legendary</p>
+                    <div class="pack-price">2000 💰</div>
+                    <div class="pack-rarity-odds">
+                        <div class="rarity-bar">
+                            <div class="rarity-fill common" style="width: 0%;"></div>
+                            <div class="rarity-fill uncommon" style="width: 0%;"></div>
+                            <div class="rarity-fill rare" style="width: 20%;"></div>
+                            <div class="rarity-fill epic" style="width: 60%;"></div>
+                            <div class="rarity-fill legendary" style="width: 20%;"></div>
+                        </div>
+                        <div class="rarity-labels">
+                            <span class="rarity-common">0%</span>
+                            <span class="rarity-uncommon">0%</span>
+                            <span class="rarity-rare">20%</span>
+                            <span class="rarity-epic">60%</span>
+                            <span class="rarity-legendary">20%</span>
+                        </div>
+                    </div>
+                    <button class="btn buy-pack-btn" data-pack-type="diamond">Buy Pack</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Ladder Warriors - League of Legends Challenger Cards</p>
+        
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Check authentication status
+            checkAuthStatus().then(result => {
+                if (result.isLoggedIn) {
+                    updateUserInterface();
+                } else {
+                    // Show login required message for non-authenticated users
+                    document.getElementById('login-required-message').classList.remove('hidden');
+                }
+            });
+            
+            // Add event listeners to buy buttons
+            const buyButtons = document.querySelectorAll('.buy-pack-btn');
+            buyButtons.forEach(button => {
+                button.addEventListener('click', handleBuyPack);
+            });
+            
+            // Handle buy pack button click
+            async function handleBuyPack(event) {
+                // Check if user is logged in
+                if (!isLoggedIn()) {
+                    showError('Please login to purchase packs');
+                    return;
+                }
+                
+                const packType = event.target.getAttribute('data-pack-type');
+                
+                try {
+                    const response = await fetch('/api/shop/packs/buy', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json'
+                        },
+                        credentials: 'include',
+                        body: JSON.stringify({ packType })
+                    });
+                    
+                    const data = await response.json();
+                    
+                    if (response.ok) {
+                        // Update user currency from server response
+                        const userResponse = await fetch('/api/auth/me', {
+                            method: 'GET',
+                            credentials: 'include'
+                        });
+                        
+                        if (userResponse.ok) {
+                            const userData = await userResponse.json();
+                            userCurrency = userData.currency;
+                            document.getElementById('currency-amount').textContent = userCurrency;
+                        }
+                        
+                        // Show success message
+                        alert(`Successfully purchased ${packType} pack! Go to your Packs page to open it.`);
+                        
+                        // Redirect to packs page
+                        window.location.href = '/packs.html';
+                    } else {
+                        showError(data.message || 'Failed to purchase pack');
+                    }
+                } catch (error) {
+                    console.error('Error purchasing pack:', error);
+                    showError('An error occurred while purchasing the pack');
+                }
+            }
+        });
+    </script>
+    
+    <style>
+        /* Shop-specific styles */
+        .section-description {
+            text-align: center;
+            margin-bottom: 30px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .auth-message {
+            text-align: center;
+            background-color: rgba(200, 155, 60, 0.1);
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            border: 1px solid var(--secondary-color);
+        }
+        
+        .packs-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        
+        .pack-card {
+            background-color: var(--card-bg-color);
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            border: 2px solid var(--card-border-color);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .pack-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+        }
+        
+        .pack-card.bronze {
+            border-color: #cd7f32;
+        }
+        
+        .pack-card.silver {
+            border-color: #c0c0c0;
+        }
+        
+        .pack-card.gold {
+            border-color: #ffd700;
+        }
+        
+        .pack-card.platinum {
+            border-color: #e5e4e2;
+        }
+        
+        .pack-card.diamond {
+            border-color: #b9f2ff;
+            box-shadow: 0 0 15px rgba(185, 242, 255, 0.3);
+        }
+        
+        .pack-icon {
+            font-size: 48px;
+            margin-bottom: 15px;
+        }
+        
+        .pack-name {
+            font-size: 20px;
+            color: var(--secondary-color);
+            margin-bottom: 10px;
+        }
+        
+        .pack-description, .pack-guarantee {
+            margin-bottom: 10px;
+            font-size: 14px;
+        }
+        
+        .pack-guarantee {
+            font-style: italic;
+            color: var(--accent-color);
+        }
+        
+        .pack-price {
+            font-size: 24px;
+            font-weight: bold;
+            color: var(--secondary-color);
+            margin: 15px 0;
+        }
+        
+        .pack-rarity-odds {
+            margin: 15px 0;
+        }
+        
+        .rarity-bar {
+            height: 10px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 5px;
+            overflow: hidden;
+            display: flex;
+        }
+        
+        .rarity-fill {
+            height: 100%;
+        }
+        
+        .rarity-fill.common {
+            background-color: var(--common-color);
+        }
+        
+        .rarity-fill.uncommon {
+            background-color: var(--uncommon-color);
+        }
+        
+        .rarity-fill.rare {
+            background-color: var(--rare-color);
+        }
+        
+        .rarity-fill.epic {
+            background-color: var(--epic-color);
+        }
+        
+        .rarity-fill.legendary {
+            background-color: var(--legendary-color);
+        }
+        
+        .rarity-labels {
+            display: flex;
+            justify-content: space-between;
+            font-size: 10px;
+            margin-top: 5px;
+        }
+        
+        .rarity-common {
+            color: var(--common-color);
+        }
+        
+        .rarity-uncommon {
+            color: var(--uncommon-color);
+        }
+        
+        .rarity-rare {
+            color: var(--rare-color);
+        }
+        
+        .rarity-epic {
+            color: var(--epic-color);
+        }
+        
+        .rarity-legendary {
+            color: var(--legendary-color);
+        }
+        
+        .buy-pack-btn {
+            margin-top: 15px;
+            width: 100%;
+        }
+    </style>
+</body>
+</html>

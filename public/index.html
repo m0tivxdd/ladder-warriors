@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ladder Warriors - Home</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/cards.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Ladder Warriors</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="market.html">Market</a></li>
+                <li><a href="collection.html">Collection</a></li>
+                <li><a href="packs.html">Packs</a></li>
+            </ul>
+        </nav>
+        <div class="user-area">
+            <div class="currency-display">
+                <span id="currency-amount">0</span>
+                <span class="currency-icon">💰</span>
+            </div>
+            <div class="auth-buttons">
+                <a href="login.html" id="login-btn" class="btn">Login</a>
+                <a href="register.html" id="register-btn" class="btn">Register</a>
+                <button id="logout-btn" class="btn hidden">Logout</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h2>Collect EUW Challenger Cards</h2>
+                <p>Build your collection of top League of Legends players from the EUW Challenger ladder!</p>
+                <a href="shop.html" class="btn btn-primary">Get Started</a>
+            </div>
+        </section>
+
+        <section class="featured-cards">
+            <h2>Featured Cards</h2>
+            <div class="cards-container" id="featured-cards-container">
+                <!-- Featured cards will be loaded here via JavaScript -->
+                <div class="loading">Loading featured cards...</div>
+            </div>
+        </section>
+
+        <section class="how-it-works">
+            <h2>How It Works</h2>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-icon">🎮</div>
+                    <h3>Buy Packs</h3>
+                    <p>Purchase packs containing random Challenger player cards.</p>
+                </div>
+                <div class="step">
+                    <div class="step-icon">🃏</div>
+                    <h3>Build Collection</h3>
+                    <p>Open packs to discover new cards and grow your collection.</p>
+                </div>
+                <div class="step">
+                    <div class="step-icon">💹</div>
+                    <h3>Trade on Market</h3>
+                    <p>Buy and sell cards with other players on the marketplace.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Ladder Warriors - League of Legends Challenger Cards</p>
+        
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script>
+        // Load featured cards on homepage
+        document.addEventListener('DOMContentLoaded', () => {
+            if (isLoggedIn()) {
+                updateUserInterface();
+                loadFeaturedCards();
+            } else {
+                checkAuthStatus().then(result => {
+                    if (result.isLoggedIn) {
+                        updateUserInterface();
+                    }
+                    loadFeaturedCards();
+                });
+            }
+        });
+
+        function loadFeaturedCards() {
+            const cardsContainer = document.getElementById('featured-cards-container');
+            
+            // Fetch top players for featured cards
+            fetch('/api/players/featured')
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Failed to load featured cards');
+                    }
+                    return response.json();
+                })
+                .then(players => {
+                    cardsContainer.innerHTML = '';
+                    
+                    if (players.length === 0) {
+                        cardsContainer.innerHTML = '<p>No featured cards available right now.</p>';
+                        return;
+                    }
+                    
+                    players.forEach(player => {
+                        const card = createCardElement(player);
+                        cardsContainer.appendChild(card);
+                    });
+                })
+                .catch(error => {
+                    console.error('Error loading featured cards:', error);
+                    cardsContainer.innerHTML = '<p>Failed to load featured cards. Please try again later.</p>';
+                });
+        }
+    </script>
+</body>
+</html>

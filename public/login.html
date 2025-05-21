@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ladder Warriors - Login</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Ladder Warriors</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="market.html">Market</a></li>
+                <li><a href="collection.html">Collection</a></li>
+                <li><a href="packs.html">Packs</a></li>
+            </ul>
+        </nav>
+        <div class="user-area">
+            <div class="currency-display">
+                <span id="currency-amount">0</span>
+                <span class="currency-icon">💰</span>
+            </div>
+            <div class="auth-buttons">
+                <a href="login.html" id="login-btn" class="btn active">Login</a>
+                <a href="register.html" id="register-btn" class="btn">Register</a>
+                <button id="logout-btn" class="btn hidden">Logout</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section>
+            <div class="form-container">
+                <h2 class="form-title">Login to Your Account</h2>
+                <form id="login-form">
+                    <div class="form-group">
+                        <label for="username">Username</label>
+                        <input type="text" id="username" name="username" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password" required>
+                    </div>
+                    <div class="error-message" id="login-error" style="display: none;"></div>
+                    <button type="submit" class="btn btn-primary" style="width: 100%;">Login</button>
+                </form>
+                <div class="form-footer">
+                    <p>Don't have an account? <a href="register.html">Register</a></p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Ladder Warriors - League of Legends Challenger Cards</p>
+        
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Check if user is already logged in
+            checkAuthStatus().then(result => {
+                if (result.isLoggedIn) {
+                    // Redirect to home page if already logged in
+                    window.location.href = '/';
+                }
+            });
+
+            // Handle login form submission
+            const loginForm = document.getElementById('login-form');
+            const errorElement = document.getElementById('login-error');
+
+            loginForm.addEventListener('submit', async (e) => {
+                e.preventDefault();
+                
+                const username = document.getElementById('username').value;
+                const password = document.getElementById('password').value;
+
+                // Reset error message
+                errorElement.style.display = 'none';
+                
+                try {
+                    const response = await fetch('/api/auth/login', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json'
+                        },
+                        credentials: 'include',
+                        body: JSON.stringify({ username, password })
+                    });
+                    
+                    const data = await response.json();
+                    
+                    if (response.ok) {
+                        // Update current user
+                        currentUser = data.user;
+                        userCurrency = data.user.currency;
+                        
+                        // Redirect to home page
+                        window.location.href = '/';
+                    } else {
+                        // Show error message
+                        errorElement.textContent = data.message || 'Login failed';
+                        errorElement.style.display = 'block';
+                        
+                        // Add shake animation
+                        loginForm.classList.add('shake');
+                        setTimeout(() => {
+                            loginForm.classList.remove('shake');
+                        }, 500);
+                    }
+                } catch (error) {
+                    console.error('Login error:', error);
+                    errorElement.textContent = 'An error occurred during login';
+                    errorElement.style.display = 'block';
+                }
+            });
+        });
+    </script>
+</body>
+</html>

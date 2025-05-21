@@ -1,0 +1,4202 @@
+[
+  {
+    "riotId": "KC NEXT ADKING#EUW",
+    "leaguePoints": 1981,
+    "rarity": "legendary",
+    "position": "Mid",
+    "attributes": {
+      "mechanics": 103,
+      "gamesense": 100,
+      "teamfighting": 108,
+      "laning": 95,
+      "versatility": 101
+    },
+    "value": 198
+  },
+  {
+    "riotId": "Walid Georgey#EUW",
+    "leaguePoints": 1979,
+    "rarity": "legendary",
+    "position": "ADC",
+    "attributes": {
+      "mechanics": 97,
+      "gamesense": 103,
+      "teamfighting": 97,
+      "laning": 101,
+      "versatility": 108
+    },
+    "value": 197
+  },
+  {
+    "riotId": "Razørk Activoo#razzz",
+    "leaguePoints": 1843,
+    "rarity": "legendary",
+    "position": "Top",
+    "attributes": {
+      "mechanics": 94,
+      "gamesense": 109,
+      "teamfighting": 108,
+      "laning": 95,
+      "versatility": 91
+    },
+    "value": 184
+  },
+  {
+    "riotId": "Naak Pado#VIT",
+    "leaguePoints": 1815,
+    "rarity": "legendary",
+    "position": "ADC",
+    "attributes": {
+      "mechanics": 90,
+      "gamesense": 106,
+      "teamfighting": 95,
+      "laning": 100,
+      "versatility": 90
+    },
+    "value": 181
+  },
+  {
+    "riotId": "Odysseus#131",
+    "leaguePoints": 1802,
+    "rarity": "legendary",
+    "position": "Top",
+    "attributes": {
+      "mechanics": 94,
+      "gamesense": 100,
+      "teamfighting": 109,
+      "laning": 99,
+      "versatility": 109
+    },
+    "value": 180
+  },
+  {
+    "riotId": "FNC Mikyx#1998",
+    "leaguePoints": 1801,
+    "rarity": "legendary",
+    "position": "Mid",
+    "attributes": {
+      "mechanics": 95,
+      "gamesense": 103,
+      "teamfighting": 95,
+      "laning": 95,
+      "versatility": 109
+    },
+    "value": 180
+  },
+  {
+    "riotId": "tukaan#tukan",
+    "leaguePoints": 1792,
+    "rarity": "epic",
+    "position": "Jungle",
+    "attributes": {
+      "mechanics": 87,
+      "gamesense": 94,
+      "teamfighting": 87,
+      "laning": 95,
+      "versatility": 96
+    },
+    "value": 179
+  },
+  {
+    "riotId": "J1HUIV#000",
+    "leaguePoints": 1780,
+    "rarity": "epic",
+    "position": "Top",
+    "attributes": {
+      "mechanics": 87,
+      "gamesense": 88,
+      "teamfighting": 81,
+      "laning": 92,
+      "versatility": 89
+    },
+    "value": 178
+  },
+  {
+    "riotId": "lyncas mad kid#lync1",
+    "leaguePoints": 1773,
+    "rarity": "epic",
+    "position": "Support",
+    "attributes": {
+      "mechanics": 88,
+      "gamesense": 97,
+      "teamfighting": 84,
+      "laning": 99,
+      "versatility": 89
+    },
+    "value": 177
+  },
+  {
+    "riotId": "G2 SkewMond#3327",
+    "leaguePoints": 1771,
+    "rarity": "epic",
+    "position": "ADC",
+    "attributes": {
+      "mechanics": 90,
+      "gamesense": 88,
+      "teamfighting": 87,
+      "laning": 89,
+      "versatility": 99
+    },
+    "value": 177
+  },
+  {
+    "riotId": "Bonnie#BLDP",
+    "leaguePoints": 1676,
+    "rarity": "epic",
+    "position": "Jungle",
+    "attributes": {
+      "mechanics": 99,
+      "gamesense": 89,
+      "teamfighting": 98,
+      "laning": 91,
+      "versatility": 96
+    },
+    "value": 167
+  },
+  {
+    "riotId": "Agurin#DND",
+    "leaguePoints": 1667,
+    "rarity": "epic",
+    "position": "ADC",
+    "attributes": {
+      "mechanics": 90,
+      "gamesense": 93,
+      "teamfighting": 85,
+      "laning": 80,
+      "versatility": 93
+    },
+    "value": 166
+  },
+  {
+    "riotId": "skygge kriger#EUV",
+    "leaguePoints": 1650,
+    "rarity": "epic",
+    "position": "Mid",
+    "attributes": {
+      "mechanics": 89,
+      "gamesense": 97,
+      "teamfighting": 90,
+      "laning": 97,
+      "versatility": 98
+    },
+    "value": 165
+  },
+  {
+    "riotId": "TwTv Phantasm#103",
+    "leaguePoints": 1643,
+    "rarity": "epic",
+    "position": "ADC",
+    "attributes": {
+      "mechanics": 87,
+      "gamesense": 96,
+      "teamfighting": 94,
+      "laning": 84,
+      "versatility": 84
+    },
+    "value": 164
+  },
+  {
+    "riotId": "DnDn123#123",
+    "leaguePoints": 1631,
+    "rarity": "epic",
+    "position": "Support",
+    "attributes": {
+      "mechanics": 95,
+      "gamesense": 92,
+      "teamfighting": 83,
+      "laning": 87,
+      "versatility": 85
+    },
+    "value": 163
+  },
+  {
+    "riotId": "AFW Nano#AFW",
+    "leaguePoints": 1630,
+    "rarity": "epic",
+    "position": "Mid",
+    "attributes": {
+      "mechanics": 82,
+      "gamesense": 80,
+      "teamfighting": 95,
+      "laning": 84,
+      "versatility": 82
+    },
+    "value": 163
+  },
+  {
+    "riotId": "G2 Labrov#8085",
+    "leaguePoints": 1624,
+    "rarity": "epic",
+    "position": "Mid",
+    "attributes": {
+      "mechanics": 91,
+      "gamesense": 95,
+      "teamfighting": 80,
+      "laning": 86,
+      "versatility": 94
+    },
+    "value": 162
+  },
+  {
+    "riotId": "MPAINW XWRIS#AKAP",
+    "leaguePoints": 1595,
+    "rarity": "rare",
+    "position": "Jungle",
+    "attributes": {
+      "mechanics": 75,
+      "gamesense": 87,
+      "teamfighting": 83,
+      "laning": 84,
+      "versatility": 87
+    },
+    "value": 159
+  },
+  {
+    "riotId": "BABO TOP#EUW",
+    "leaguePoints": 1574,
+    "rarity": "rare",
+    "position": "Support",
+    "attributes": {
+      "mechanics": 73,
+      "gamesense": 74,
+      "teamfighting": 71,
+      "laning": 70,
+      "versatility": 77
+    },
+    "value": 157
+  },
+  {
+    "riotId": "Aslan#945",
+    "leaguePoints": 1572,
+    "rarity": "rare",
+    "position": "Mid",
+    "attributes": {
+      "mechanics": 70,
+      "gamesense": 73,
+      "teamfighting": 83,
+      "laning": 86,
+      "versatility": 79
+    },
+    "value": 157
+  },
+  {
+    "riotId": "Rhilech#15105",
+    "leaguePoints": 1563,
+    "rarity": "rare",
+    "position": "ADC",
+    "attributes": {
+      "mechanics": 80,
+      "gamesense": 83,
+      "teamfighting": 86,
+      "laning": 71,
+      "versatility": 84
+    },
+    "value": 156
+  },
+  {
+    "riotId": "Foutriquet#FOU",
+    "leaguePoints": 1559,
+    "rarity": "rare",
+    "position": "ADC",
+    "attributes": {
+      "mechanics": 79,
+      "gamesense": 70,
+      "teamfighting": 88,
+      "laning": 72,
+      "versatility": 85
+    },
+    "value": 155
+  },
+  {
+    "riotId": "G2 Hans Sama#12838",
+    "leaguePoints": 1548,
+    "rarity": "rare",
+    "position": "ADC",
+    "attributes": {
+      "mechanics": 78,
+      "gamesense": 72,
+      "teamfighting": 72,
+      "laning": 88,
+      "versatility": 77
+    },
+    "value": 154
+  },
+  {
+    "riotId": "G2 Caps#1323",
+    "leaguePoints": 1542,
+    "rarity": "rare",
+    "position": "Jungle",
+    "attributes": {
+      "mechanics": 89,
+      "gamesense": 78,
+      "teamfighting": 84,
+      "laning": 71,
+      "versatility": 70
+    },
+    "value": 154
+  },
+  {
+    "riotId": "Tοαst#EUW",
+    "leaguePoints": 1542,
+    "rarity": "rare",
+    "position": "Support",
+    "attributes": {
+      "mechanics": 84,
+      "gamesense": 85,
+      "teamfighting": 79,
+      "laning": 74,
+      "versatility": 71
+    },
+    "value": 154
+  },
+  {
+    "riotId": "DK Siwoo#dajor",
+    "leaguePoints": 1534,
+    "rarity": "rare",
+    "position": "Top",
+    "attributes": {
+      "mechanics": 76,
+      "gamesense": 85,
+      "teamfighting": 80,
+      "laning": 87,
+      "versatility": 74
+    },
+    "value": 153
+  },
+  {
+    "riotId": "Ivory#EfEf",
+    "leaguePoints": 1532,
+    "rarity": "rare",
+    "position": "ADC",
+    "attributes": {
+      "mechanics": 85,
+      "gamesense": 79,
+      "teamfighting": 83,
+      "laning": 78,
+      "versatility": 86
+    },
+    "value": 153
+  },
+  {
+    "riotId": "SeRiN1#EUW",
+    "leaguePoints": 1532,
+    "rarity": "rare",
+    "position": "Mid",
+    "attributes": {
+      "mechanics": 74,
+      "gamesense": 82,
+      "teamfighting": 84,
+      "laning": 79,
+      "versatility": 88
+    },
+    "value": 153
+  },
+  {
+    "riotId": "HARPOON#2005",
+    "leaguePoints": 1520,
+    "rarity": "rare",
+    "position": "ADC",
+    "attributes": {
+      "mechanics": 73,
+      "gamesense": 81,
+      "teamfighting": 83,
+      "laning": 83,
+      "versatility": 78
+    },
+    "value": 152
+  },
+  {
+    "riotId": "Zest#D P",
+    "leaguePoints": 1518,
+    "rarity": "rare",
+    "position": "ADC",
+    "attributes": {
+      "mechanics": 71,
+      "gamesense": 83,
+      "teamfighting": 73,
+      "laning": 88,
+      "versatility": 70
+    },
+    "value": 151
+  },
+  {
+    "riotId": "G4KG05#0023",
+    "leaguePoints": 1517,
+    "rarity": "rare",
+    "position": "Jungle",
+    "attributes": {
+      "mechanics": 75,
+      "gamesense": 76,
+      "teamfighting": 72,
+      "laning": 76,
+      "versatility": 71
+    },
+    "value": 151
+  },
+  {
+    "riotId": "Ignacarious#5232",
+    "leaguePoints": 1503,
+    "rarity": "rare",
+    "position": "Top",
+    "attributes": {
+      "mechanics": 86,
+      "gamesense": 75,
+      "teamfighting": 84,
+      "laning": 73,
+      "versatility": 77
+    },
+    "value": 150
+  },
+  {
+    "riotId": "2001 05 09#2001",
+    "leaguePoints": 1489,
+    "rarity": "rare",
+    "position": "Mid",
+    "attributes": {
+      "mechanics": 70,
+      "gamesense": 70,
+      "teamfighting": 75,
+      "laning": 85,
+      "versatility": 74
+    },
+    "value": 148
+  },
+  {
+    "riotId": "K C#kcwin",
+    "leaguePoints": 1486,
+    "rarity": "rare",
+    "position": "Jungle",
+    "attributes": {
+      "mechanics": 82,
+      "gamesense": 85,
+      "teamfighting": 88,
+      "laning": 72,
+      "versatility": 78
+    },
+    "value": 148
+  },
+  {
+    "riotId": "Kenal#EUW",
+    "leaguePoints": 1482,
+    "rarity": "rare",
+    "position": "ADC",
+    "attributes": {
+      "mechanics": 82,
+      "gamesense": 82,
+      "teamfighting": 78,
+      "laning": 88,
+      "versatility": 88
+    },
+    "value": 148
+  },
+  {
+    "riotId": "decay arc#EUW",
+    "leaguePoints": 1480,
+    "rarity": "rare",
+    "position": "Support",
+    "attributes": {
+      "mechanics": 80,
+      "gamesense": 81,
+      "teamfighting": 81,
+      "laning": 85,
+      "versatility": 83
+    },
+    "value": 148
+  },
+  {
+    "riotId": "happy game#qwer",
+    "leaguePoints": 1467,
+    "rarity": "rare",
+    "position": "Jungle",
+    "attributes": {
+      "mechanics": 70,
+      "gamesense": 77,
+      "teamfighting": 89,
+      "laning": 88,
+      "versatility": 85
+    },
+    "value": 146
+  },
+  {
+    "riotId": "Greed#1031",
+    "leaguePoints": 1466,
+    "rarity": "rare",
+    "position": "Jungle",
+    "attributes": {
+      "mechanics": 83,
+      "gamesense": 74,
+      "teamfighting": 82,
+      "laning": 79,
+      "versatility": 82
+    },
+    "value": 146
+  },
+  {
+    "riotId": "K405#K405",
+    "leaguePoints": 1464,
+    "rarity": "rare",
+    "position": "Top",
+    "attributes": {
+      "mechanics": 72,
+      "gamesense": 70,
+      "teamfighting": 84,
+      "laning": 75,
+      "versatility": 73
+    },
+    "value": 146
+  },
+  {
+    "riotId": "yukino cat#blue",
+    "leaguePoints": 1457,
+    "rarity": "rare",
+    "position": "ADC",
+    "attributes": {
+      "mechanics": 88,
+      "gamesense": 86,
+      "teamfighting": 80,
+      "laning": 72,
+      "versatility": 86
+    },
+    "value": 145
+  },
+  {
+    "riotId": "Barkoon#bark",
+    "leaguePoints": 1450,
+    "rarity": "rare",
+    "position": "Jungle",
+    "attributes": {
+      "mechanics": 86,
+      "gamesense": 88,
+      "teamfighting": 89,
+      "laning": 86,
+      "versatility": 73
+    },
+    "value": 145
+  },
+  {
+    "riotId": "Cola#4463",
+    "leaguePoints": 1448,
+    "rarity": "rare",
+    "position": "Mid",
+    "attributes": {
+      "mechanics": 84,
+      "gamesense": 77,
+      "teamfighting": 77,
+      "laning": 79,
+      "versatility": 88
+    },
+    "value": 144
+  },
+  {
+    "riotId": "is it just me#EUW",
+    "leaguePoints": 1446,
+    "rarity": "rare",
+    "position": "ADC",
+    "attributes": {
+      "mechanics": 70,
+      "gamesense": 72,
+      "teamfighting": 78,
+      "laning": 84,
+      "versatility": 88
+    },
+    "value": 144
+  },
+  {
+    "riotId": "Thumbs Down#4847",
+    "leaguePoints": 1437,
+    "rarity": "rare",
+    "position": "Jungle",
+    "attributes": {
+      "mechanics": 70,
+      "gamesense": 75,
+      "teamfighting": 72,
+      "laning": 79,
+      "versatility": 75
+    },
+    "value": 143
+  },
+  {
+    "riotId": "Boukada#EUW",
+    "leaguePoints": 1434,
+    "rarity": "rare",
+    "position": "ADC",
+    "attributes": {
+      "mechanics": 78,
+      "gamesense": 78,
+      "teamfighting": 87,
+      "laning": 72,
+      "versatility": 84
+    },
+    "value": 143
+  },
+  {
+    "riotId": "NattyNatt#2005",
+    "leaguePoints": 1418,
+    "rarity": "rare",
+    "position": "ADC",
+    "attributes": {
+      "mechanics": 86,
+      "gamesense": 82,
+      "teamfighting": 73,
+      "laning": 83,
+      "versatility": 81
+    },
+    "value": 141
+  },
+  {
+    "riotId": "SALUTATOUSCPOLO#POLO",
+    "leaguePoints": 1411,
+    "rarity": "rare",
+    "position": "Top",
+    "attributes": {
+      "mechanics": 73,
+      "gamesense": 74,
+      "teamfighting": 87,
+      "laning": 85,
+      "versatility": 79
+    },
+    "value": 141
+  },
+  {
+    "riotId": "with you#eu1",
+    "leaguePoints": 1404,
+    "rarity": "rare",
+    "position": "Jungle",
+    "attributes": {
+      "mechanics": 87,
+      "gamesense": 80,
+      "teamfighting": 73,
+      "laning": 87,
+      "versatility": 83
+    },
+    "value": 140
+  },
+  {
+    "riotId": "lego ninjago#vape",
+    "leaguePoints": 1404,
+    "rarity": "rare",
+    "position": "Top",
+    "attributes": {
+      "mechanics": 72,
+      "gamesense": 72,
+      "teamfighting": 80,
+      "laning": 89,
+      "versatility": 78
+    },
+    "value": 140
+  },
+  {
+    "riotId": "Shëun#2530",
+    "leaguePoints": 1404,
+    "rarity": "rare",
+    "position": "ADC",
+    "attributes": {
+      "mechanics": 79,
+      "gamesense": 81,
+      "teamfighting": 78,
+      "laning": 89,
+      "versatility": 82
+    },
+    "value": 140
+  },
+  {
+    "riotId": "정성훈#2003",
+    "leaguePoints": 1403,
+    "rarity": "rare",
+    "position": "ADC",
+    "attributes": {
+      "mechanics": 75,
+      "gamesense": 85,
+      "teamfighting": 84,
+      "laning": 79,
+      "versatility": 81
+    },
+    "value": 140
+  },
+  {
+    "riotId": "chenzelot#LOT",
+    "leaguePoints": 1402,
+    "rarity": "rare",
+    "position": "ADC",
+    "attributes": {
+      "mechanics": 86,
+      "gamesense": 77,
+      "teamfighting": 79,
+      "laning": 77,
+      "versatility": 80
+    },
+    "value": 140
+  },
+  {
+    "riotId": "SMRADOCH ZICSSI#EUW",
+    "leaguePoints": 1401,
+    "rarity": "rare",
+    "position": "Jungle",
+    "attributes": {
+      "mechanics": 73,
+      "gamesense": 73,
+      "teamfighting": 78,
+      "laning": 71,
+      "versatility": 88
+    },
+    "value": 140
+  },
+  {
+    "riotId": "Buggy2v9#EUW",
+    "leaguePoints": 1401,
+    "rarity": "rare",
+    "position": "Mid",
+    "attributes": {
+      "mechanics": 83,
+      "gamesense": 86,
+      "teamfighting": 80,
+      "laning": 79,
+      "versatility": 81
+    },
+    "value": 140
+  },
+  {
+    "riotId": "Cold#asd4",
+    "leaguePoints": 1396,
+    "rarity": "uncommon",
+    "position": "Mid",
+    "attributes": {
+      "mechanics": 61,
+      "gamesense": 79,
+      "teamfighting": 71,
+      "laning": 63,
+      "versatility": 78
+    },
+    "value": 139
+  },
+  {
+    "riotId": "rng victim#0867",
+    "leaguePoints": 1392,
+    "rarity": "uncommon",
+    "position": "Jungle",
+    "attributes": {
+      "mechanics": 66,
+      "gamesense": 67,
+      "teamfighting": 78,
+      "laning": 70,
+      "versatility": 69
+    },
+    "value": 139
+  },
+  {
+    "riotId": "Kozi#Z10",
+    "leaguePoints": 1389,
+    "rarity": "uncommon",
+    "position": "Support",
+    "attributes": {
+      "mechanics": 63,
+      "gamesense": 72,
+      "teamfighting": 76,
+      "laning": 67,
+      "versatility": 74
+    },
+    "value": 138
+  },
+  {
+    "riotId": "TheRoyalKanin#EUW",
+    "leaguePoints": 1385,
+    "rarity": "uncommon",
+    "position": "Jungle",
+    "attributes": {
+      "mechanics": 75,
+      "gamesense": 66,
+      "teamfighting": 62,
+      "laning": 60,
+      "versatility": 69
+    },
+    "value": 138
+  },
+  {
+    "riotId": "Husum#EUW",
+    "leaguePoints": 1385,
+    "rarity": "uncommon",
+    "position": "ADC",
+    "attributes": {
+      "mechanics": 63,
+      "gamesense": 70,
+      "teamfighting": 68,
+      "laning": 66,
+      "versatility": 76
+    },
+    "value": 138
+  },
+  {
+    "riotId": "Cekeliniomzumdan#62343",
+    "leaguePoints": 1381,
+    "rarity": "uncommon",
+    "position": "Jungle",
+    "attributes": {
+      "mechanics": 73,
+      "gamesense": 61,
+      "teamfighting": 66,
+      "laning": 65,
+      "versatility": 78
+    },
+    "value": 138
+  },
+  {
+    "riotId": "OLEG INSEC#OLEG",
+    "leaguePoints": 1380,
+    "rarity": "uncommon",
+    "position": "Support",
+    "attributes": {
+      "mechanics": 74,
+      "gamesense": 68,
+      "teamfighting": 69,
+      "laning": 75,
+      "versatility": 77
+    },
+    "value": 138
+  },
+  {
+    "riotId": "Tea#2299",
+    "leaguePoints": 1375,
+    "rarity": "uncommon",
+    "position": "ADC",
+    "attributes": {
+      "mechanics": 66,
+      "gamesense": 66,
+      "teamfighting": 76,
+      "laning": 69,
+      "versatility": 76
+    },
+    "value": 137
+  },
+  {
+    "riotId": "Saku#ritou",
+    "leaguePoints": 1372,
+    "rarity": "uncommon",
+    "position": "Support",
+    "attributes": {
+      "mechanics": 61,
+      "gamesense": 71,
+      "teamfighting": 71,
+      "laning": 78,
+      "versatility": 67
+    },
+    "value": 137
+  },
+  {
+    "riotId": "Simon Claw#Agent",
+    "leaguePoints": 1358,
+    "rarity": "uncommon",
+    "position": "Support",
+    "attributes": {
+      "mechanics": 77,
+      "gamesense": 67,
+      "teamfighting": 79,
+      "laning": 65,
+      "versatility": 67
+    },
+    "value": 135
+  },
+  {
+    "riotId": "FUN k3y#EUW",
+    "leaguePoints": 1358,
+    "rarity": "uncommon",
+    "position": "Support",
+    "attributes": {
+      "mechanics": 79,
+      "gamesense": 67,
+      "teamfighting": 71,
+      "laning": 73,
+      "versatility": 64
+    },
+    "value": 135
+  },
+  {
+    "riotId": "twtv Peng04#NMIXX",
+    "leaguePoints": 1358,
+    "rarity": "uncommon",
+    "position": "ADC",
+    "attributes": {
+      "mechanics": 60,
+      "gamesense": 73,
+      "teamfighting": 68,
+      "laning": 70,
+      "versatility": 75
+    },
+    "value": 135
+  },
+  {
+    "riotId": "Wufo#xdd",
+    "leaguePoints": 1356,
+    "rarity": "uncommon",
+    "position": "Mid",
+    "attributes": {
+      "mechanics": 68,
+      "gamesense": 63,
+      "teamfighting": 67,
+      "laning": 77,
+      "versatility": 78
+    },
+    "value": 135
+  },
+  {
+    "riotId": "LiL TommyG#EUW",
+    "leaguePoints": 1355,
+    "rarity": "uncommon",
+    "position": "Mid",
+    "attributes": {
+      "mechanics": 60,
+      "gamesense": 78,
+      "teamfighting": 74,
+      "laning": 78,
+      "versatility": 77
+    },
+    "value": 135
+  },
+  {
+    "riotId": "Opossos#侘 寂",
+    "leaguePoints": 1350,
+    "rarity": "uncommon",
+    "position": "Jungle",
+    "attributes": {
+      "mechanics": 70,
+      "gamesense": 66,
+      "teamfighting": 61,
+      "laning": 79,
+      "versatility": 70
+    },
+    "value": 135
+  },
+  {
+    "riotId": "vovalaclasse#EUW",
+    "leaguePoints": 1348,
+    "rarity": "uncommon",
+    "position": "Support",
+    "attributes": {
+      "mechanics": 71,
+      "gamesense": 66,
+      "teamfighting": 61,
+      "laning": 60,
+      "versatility": 62
+    },
+    "value": 134
+  },
+  {
+    "riotId": "Cachorro Alpha#razzz",
+    "leaguePoints": 1348,
+    "rarity": "uncommon",
+    "position": "Support",
+    "attributes": {
+      "mechanics": 72,
+      "gamesense": 71,
+      "teamfighting": 65,
+      "laning": 64,
+      "versatility": 79
+    },
+    "value": 134
+  },
+  {
+    "riotId": "NORD Vizicsacsi#TOP",
+    "leaguePoints": 1342,
+    "rarity": "uncommon",
+    "position": "Top",
+    "attributes": {
+      "mechanics": 67,
+      "gamesense": 78,
+      "teamfighting": 73,
+      "laning": 75,
+      "versatility": 79
+    },
+    "value": 134
+  },
+  {
+    "riotId": "Paixdia#Supp",
+    "leaguePoints": 1342,
+    "rarity": "uncommon",
+    "position": "Mid",
+    "attributes": {
+      "mechanics": 68,
+      "gamesense": 64,
+      "teamfighting": 64,
+      "laning": 76,
+      "versatility": 75
+    },
+    "value": 134
+  },
+  {
+    "riotId": "serein#MP7",
+    "leaguePoints": 1342,
+    "rarity": "uncommon",
+    "position": "Jungle",
+    "attributes": {
+      "mechanics": 62,
+      "gamesense": 77,
+      "teamfighting": 74,
+      "laning": 69,
+      "versatility": 64
+    },
+    "value": 134
+  },
+  {
+    "riotId": "ShadowZerô#2805",
+    "leaguePoints": 1340,
+    "rarity": "uncommon",
+    "position": "Top",
+    "attributes": {
+      "mechanics": 70,
+      "gamesense": 62,
+      "teamfighting": 68,
+      "laning": 68,
+      "versatility": 64
+    },
+    "value": 134
+  },
+  {
+    "riotId": "VIT Nisqy#LEC",
+    "leaguePoints": 1333,
+    "rarity": "uncommon",
+    "position": "Jungle",
+    "attributes": {
+      "mechanics": 79,
+      "gamesense": 69,
+      "teamfighting": 72,
+      "laning": 66,
+      "versatility": 66
+    },
+    "value": 133
+  },
+  {
+    "riotId": "Phanta#107",
+    "leaguePoints": 1327,
+    "rarity": "uncommon",
+    "position": "Support",
+    "attributes": {
+      "mechanics": 67,
+      "gamesense": 61,
+      "teamfighting": 64,
+      "laning": 73,
+      "versatility": 79
+    },
+    "value": 132
+  },
+  {
+    "riotId": "Maynter#EUW",
+    "leaguePoints": 1323,
+    "rarity": "uncommon",
+    "position": "Support",
+    "attributes": {
+      "mechanics": 64,
+      "gamesense": 62,
+      "teamfighting": 61,
+      "laning": 64,
+      "versatility": 67
+    },
+    "value": 132
+  },
+  {
+    "riotId": "Who is thisss1#EUW",
+    "leaguePoints": 1323,
+    "rarity": "uncommon",
+    "position": "Jungle",
+    "attributes": {
+      "mechanics": 71,
+      "gamesense": 66,
+      "teamfighting": 69,
+      "laning": 74,
+      "versatility": 62
+    },
+    "value": 132
+  },
+  {
+    "riotId": "stardewvalley67#EUW",
+    "leaguePoints": 1314,
+    "rarity": "uncommon",
+    "position": "Mid",
+    "attributes": {
+      "mechanics": 77,
+      "gamesense": 76,
+      "teamfighting": 62,
+      "laning": 66,
+      "versatility": 61
+    },
+    "value": 131
+  },
+  {
+    "riotId": "Targamas#5555",
+    "leaguePoints": 1313,
+    "rarity": "uncommon",
+    "position": "Top",
+    "attributes": {
+      "mechanics": 72,
+      "gamesense": 71,
+      "teamfighting": 71,
+      "laning": 63,
+      "versatility": 77
+    },
+    "value": 131
+  },
+  {
+    "riotId": "xiao chao long#CHINA",
+    "leaguePoints": 1311,
+    "rarity": "uncommon",
+    "position": "ADC",
+    "attributes": {
+      "mechanics": 79,
+      "gamesense": 64,
+      "teamfighting": 78,
+      "laning": 79,
+      "versatility": 74
+    },
+    "value": 131
+  },
+  {
+    "riotId": "Mo Syzlak#123",
+    "leaguePoints": 1310,
+    "rarity": "uncommon",
+    "position": "ADC",
+    "attributes": {
+      "mechanics": 69,
+      "gamesense": 70,
+      "teamfighting": 69,
+      "laning": 75,
+      "versatility": 62
+    },
+    "value": 131
+  },
+  {
+    "riotId": "pt4#000",
+    "leaguePoints": 1306,
+    "rarity": "uncommon",
+    "position": "Mid",
+    "attributes": {
+      "mechanics": 73,
+      "gamesense": 66,
+      "teamfighting": 65,
+      "laning": 79,
+      "versatility": 73
+    },
+    "value": 130
+  },
+  {
+    "riotId": "Aileri#BOAT",
+    "leaguePoints": 1302,
+    "rarity": "uncommon",
+    "position": "Jungle",
+    "attributes": {
+      "mechanics": 75,
+      "gamesense": 74,
+      "teamfighting": 74,
+      "laning": 69,
+      "versatility": 75
+    },
+    "value": 130
+  },
+  {
+    "riotId": "schnell next#EUW",
+    "leaguePoints": 1301,
+    "rarity": "uncommon",
+    "position": "Mid",
+    "attributes": {
+      "mechanics": 66,
+      "gamesense": 78,
+      "teamfighting": 68,
+      "laning": 66,
+      "versatility": 78
+    },
+    "value": 130
+  },
+  {
+    "riotId": "regate#EUW3",
+    "leaguePoints": 1300,
+    "rarity": "uncommon",
+    "position": "ADC",
+    "attributes": {
+      "mechanics": 65,
+      "gamesense": 79,
+      "teamfighting": 67,
+      "laning": 66,
+      "versatility": 78
+    },
+    "value": 130
+  },
+  {
+    "riotId": "lazysup#2025",
+    "leaguePoints": 1292,
+    "rarity": "uncommon",
+    "position": "ADC",
+    "attributes": {
+      "mechanics": 76,
+      "gamesense": 72,
+      "teamfighting": 72,
+      "laning": 60,
+      "versatility": 71
+    },
+    "value": 129
+  },
+  {
+    "riotId": "TwitchTVxKenzuke#EUW",
+    "leaguePoints": 1283,
+    "rarity": "uncommon",
+    "position": "ADC",
+    "attributes": {
+      "mechanics": 70,
+      "gamesense": 69,
+      "teamfighting": 72,
+      "laning": 78,
+      "versatility": 76
+    },
+    "value": 128
+  },
+  {
+    "riotId": "Carnagε#EUW",
+    "leaguePoints": 1283,
+    "rarity": "uncommon",
+    "position": "Support",
+    "attributes": {
+      "mechanics": 71,
+      "gamesense": 63,
+      "teamfighting": 73,
+      "laning": 78,
+      "versatility": 60
+    },
+    "value": 128
+  },
+  {
+    "riotId": "Badlulu00#EUW",
+    "leaguePoints": 1281,
+    "rarity": "uncommon",
+    "position": "Mid",
+    "attributes": {
+      "mechanics": 73,
+      "gamesense": 69,
+      "teamfighting": 75,
+      "laning": 73,
+      "versatility": 72
+    },
+    "value": 128
+  },
+  {
+    "riotId": "Purple#3UVV",
+    "leaguePoints": 1279,
+    "rarity": "uncommon",
+    "position": "ADC",
+    "attributes": {
+      "mechanics": 69,
+      "gamesense": 77,
+      "teamfighting": 77,
+      "laning": 78,
+      "versatility": 74
+    },
+    "value": 127
+  },
+  {
+    "riotId": "Multirole Talent#EUW",
+    "leaguePoints": 1279,
+    "rarity": "uncommon",
+    "position": "Top",
+    "attributes": {
+      "mechanics": 78,
+      "gamesense": 71,
+      "teamfighting": 78,
+      "laning": 76,
+      "versatility": 79
+    },
+    "value": 127
+  },
+  {
+    "riotId": "Sinmivak#777",
+    "leaguePoints": 1278,
+    "rarity": "uncommon",
+    "position": "Jungle",
+    "attributes": {
+      "mechanics": 65,
+      "gamesense": 68,
+      "teamfighting": 61,
+      "laning": 60,
+      "versatility": 76
+    },
+    "value": 127
+  },
+  {
+    "riotId": "Po Gap#EUW",
+    "leaguePoints": 1268,
+    "rarity": "uncommon",
+    "position": "Mid",
+    "attributes": {
+      "mechanics": 68,
+      "gamesense": 75,
+      "teamfighting": 63,
+      "laning": 65,
+      "versatility": 78
+    },
+    "value": 126
+  },
+  {
+    "riotId": "MARIABECERRA FAN#MACA",
+    "leaguePoints": 1268,
+    "rarity": "uncommon",
+    "position": "Support",
+    "attributes": {
+      "mechanics": 69,
+      "gamesense": 71,
+      "teamfighting": 67,
+      "laning": 67,
+      "versatility": 71
+    },
+    "value": 126
+  },
+  {
+    "riotId": "Falling Flower#SVT13",
+    "leaguePoints": 1266,
+    "rarity": "uncommon",
+    "position": "Top",
+    "attributes": {
+      "mechanics": 78,
+      "gamesense": 66,
+      "teamfighting": 64,
+      "laning": 79,
+      "versatility": 61
+    },
+    "value": 126
+  },
+  {
+    "riotId": "note#Ryuk",
+    "leaguePoints": 1266,
+    "rarity": "uncommon",
+    "position": "Jungle",
+    "attributes": {
+      "mechanics": 70,
+      "gamesense": 65,
+      "teamfighting": 65,
+      "laning": 69,
+      "versatility": 77
+    },
+    "value": 126
+  },
+  {
+    "riotId": "twtv Peng04#Aespa",
+    "leaguePoints": 1266,
+    "rarity": "uncommon",
+    "position": "ADC",
+    "attributes": {
+      "mechanics": 74,
+      "gamesense": 75,
+      "teamfighting": 77,
+      "laning": 65,
+      "versatility": 73
+    },
+    "value": 126
+  },
+  {
+    "riotId": "Zhuo Ding#ARC",
+    "leaguePoints": 1265,
+    "rarity": "uncommon",
+    "position": "Jungle",
+    "attributes": {
+      "mechanics": 79,
+      "gamesense": 73,
+      "teamfighting": 77,
+      "laning": 61,
+      "versatility": 68
+    },
+    "value": 126
+  },
+  {
+    "riotId": "hahahahah#2218",
+    "leaguePoints": 1265,
+    "rarity": "uncommon",
+    "position": "Mid",
+    "attributes": {
+      "mechanics": 60,
+      "gamesense": 67,
+      "teamfighting": 71,
+      "laning": 69,
+      "versatility": 75
+    },
+    "value": 126
+  },
+  {
+    "riotId": "no sword#0507",
+    "leaguePoints": 1262,
+    "rarity": "uncommon",
+    "position": "Jungle",
+    "attributes": {
+      "mechanics": 76,
+      "gamesense": 78,
+      "teamfighting": 75,
+      "laning": 64,
+      "versatility": 76
+    },
+    "value": 126
+  },
+  {
+    "riotId": "CsacsiCarry#TOP",
+    "leaguePoints": 1261,
+    "rarity": "uncommon",
+    "position": "Mid",
+    "attributes": {
+      "mechanics": 73,
+      "gamesense": 78,
+      "teamfighting": 69,
+      "laning": 71,
+      "versatility": 62
+    },
+    "value": 126
+  },
+  {
+    "riotId": "SPOOKY#LFT",
+    "leaguePoints": 1259,
+    "rarity": "uncommon",
+    "position": "ADC",
+    "attributes": {
+      "mechanics": 75,
+      "gamesense": 75,
+      "teamfighting": 70,
+      "laning": 68,
+      "versatility": 63
+    },
+    "value": 125
+  },
+  {
+    "riotId": "KISS OF DEATH#YEN",
+    "leaguePoints": 1258,
+    "rarity": "uncommon",
+    "position": "ADC",
+    "attributes": {
+      "mechanics": 68,
+      "gamesense": 76,
+      "teamfighting": 64,
+      "laning": 78,
+      "versatility": 76
+    },
+    "value": 125
+  },
+  {
+    "riotId": "TTV RiskReforged#Tokz",
+    "leaguePoints": 1255,
+    "rarity": "uncommon",
+    "position": "ADC",
+    "attributes": {
+      "mechanics": 60,
+      "gamesense": 61,
+      "teamfighting": 63,
+      "laning": 73,
+      "versatility": 79
+    },
+    "value": 125
+  },
+  {
+    "riotId": "Shizyphus#EUW",
+    "leaguePoints": 1254,
+    "rarity": "uncommon",
+    "position": "Support",
+    "attributes": {
+      "mechanics": 79,
+      "gamesense": 77,
+      "teamfighting": 65,
+      "laning": 67,
+      "versatility": 79
+    },
+    "value": 125
+  },
+  {
+    "riotId": "Slice#lol",
+    "leaguePoints": 1252,
+    "rarity": "uncommon",
+    "position": "ADC",
+    "attributes": {
+      "mechanics": 74,
+      "gamesense": 69,
+      "teamfighting": 74,
+      "laning": 63,
+      "versatility": 71
+    },
+    "value": 125
+  },
+  {
+    "riotId": "Beanovich#bean",
+    "leaguePoints": 1252,
+    "rarity": "uncommon",
+    "position": "ADC",
+    "attributes": {
+      "mechanics": 65,
+      "gamesense": 64,
+      "teamfighting": 79,
+      "laning": 75,
+      "versatility": 65
+    },
+    "value": 125
+  },
+  {
+    "riotId": "David Lirola#goatツ",
+    "leaguePoints": 1248,
+    "rarity": "uncommon",
+    "position": "ADC",
+    "attributes": {
+      "mechanics": 71,
+      "gamesense": 63,
+      "teamfighting": 71,
+      "laning": 62,
+      "versatility": 69
+    },
+    "value": 124
+  },
+  {
+    "riotId": "Frost#matyi",
+    "leaguePoints": 1248,
+    "rarity": "uncommon",
+    "position": "Top",
+    "attributes": {
+      "mechanics": 75,
+      "gamesense": 76,
+      "teamfighting": 74,
+      "laning": 60,
+      "versatility": 75
+    },
+    "value": 124
+  },
+  {
+    "riotId": "HRTS rin#euw10",
+    "leaguePoints": 1247,
+    "rarity": "uncommon",
+    "position": "Top",
+    "attributes": {
+      "mechanics": 70,
+      "gamesense": 75,
+      "teamfighting": 71,
+      "laning": 79,
+      "versatility": 64
+    },
+    "value": 124
+  },
+  {
+    "riotId": "Jesklaa#EUW",
+    "leaguePoints": 1246,
+    "rarity": "uncommon",
+    "position": "Support",
+    "attributes": {
+      "mechanics": 68,
+      "gamesense": 73,
+      "teamfighting": 74,
+      "laning": 67,
+      "versatility": 67
+    },
+    "value": 124
+  },
+  {
+    "riotId": "KDF DuDu#KING1",
+    "leaguePoints": 1245,
+    "rarity": "uncommon",
+    "position": "Support",
+    "attributes": {
+      "mechanics": 75,
+      "gamesense": 63,
+      "teamfighting": 68,
+      "laning": 71,
+      "versatility": 65
+    },
+    "value": 124
+  },
+  {
+    "riotId": "Koldo#1233",
+    "leaguePoints": 1243,
+    "rarity": "uncommon",
+    "position": "ADC",
+    "attributes": {
+      "mechanics": 65,
+      "gamesense": 77,
+      "teamfighting": 76,
+      "laning": 78,
+      "versatility": 68
+    },
+    "value": 124
+  },
+  {
+    "riotId": "Rabble Arouser#EUW",
+    "leaguePoints": 1243,
+    "rarity": "uncommon",
+    "position": "Jungle",
+    "attributes": {
+      "mechanics": 63,
+      "gamesense": 79,
+      "teamfighting": 75,
+      "laning": 75,
+      "versatility": 64
+    },
+    "value": 124
+  },
+  {
+    "riotId": "KCB 3XA#KCB",
+    "leaguePoints": 1242,
+    "rarity": "uncommon",
+    "position": "Mid",
+    "attributes": {
+      "mechanics": 63,
+      "gamesense": 77,
+      "teamfighting": 76,
+      "laning": 70,
+      "versatility": 70
+    },
+    "value": 124
+  },
+  {
+    "riotId": "Bgurin#4000",
+    "leaguePoints": 1242,
+    "rarity": "uncommon",
+    "position": "Jungle",
+    "attributes": {
+      "mechanics": 65,
+      "gamesense": 69,
+      "teamfighting": 60,
+      "laning": 68,
+      "versatility": 74
+    },
+    "value": 124
+  },
+  {
+    "riotId": "KC Yiken#1111",
+    "leaguePoints": 1240,
+    "rarity": "uncommon",
+    "position": "Support",
+    "attributes": {
+      "mechanics": 70,
+      "gamesense": 75,
+      "teamfighting": 67,
+      "laning": 77,
+      "versatility": 73
+    },
+    "value": 124
+  },
+  {
+    "riotId": "Azzapp#31415",
+    "leaguePoints": 1240,
+    "rarity": "uncommon",
+    "position": "Jungle",
+    "attributes": {
+      "mechanics": 63,
+      "gamesense": 79,
+      "teamfighting": 77,
+      "laning": 61,
+      "versatility": 66
+    },
+    "value": 124
+  },
+  {
+    "riotId": "Kite Machine v2#EUW11",
+    "leaguePoints": 1238,
+    "rarity": "uncommon",
+    "position": "Top",
+    "attributes": {
+      "mechanics": 73,
+      "gamesense": 61,
+      "teamfighting": 69,
+      "laning": 65,
+      "versatility": 65
+    },
+    "value": 123
+  },
+  {
+    "riotId": "Matixx#EUW",
+    "leaguePoints": 1236,
+    "rarity": "uncommon",
+    "position": "Top",
+    "attributes": {
+      "mechanics": 61,
+      "gamesense": 78,
+      "teamfighting": 79,
+      "laning": 64,
+      "versatility": 76
+    },
+    "value": 123
+  },
+  {
+    "riotId": "Chance2Win#EUW",
+    "leaguePoints": 1235,
+    "rarity": "uncommon",
+    "position": "Support",
+    "attributes": {
+      "mechanics": 74,
+      "gamesense": 78,
+      "teamfighting": 71,
+      "laning": 65,
+      "versatility": 69
+    },
+    "value": 123
+  },
+  {
+    "riotId": "Mark Forster#Flash",
+    "leaguePoints": 1234,
+    "rarity": "uncommon",
+    "position": "Mid",
+    "attributes": {
+      "mechanics": 65,
+      "gamesense": 75,
+      "teamfighting": 64,
+      "laning": 60,
+      "versatility": 74
+    },
+    "value": 123
+  },
+  {
+    "riotId": "ToongE#FSK",
+    "leaguePoints": 1229,
+    "rarity": "uncommon",
+    "position": "Jungle",
+    "attributes": {
+      "mechanics": 67,
+      "gamesense": 72,
+      "teamfighting": 77,
+      "laning": 66,
+      "versatility": 76
+    },
+    "value": 122
+  },
+  {
+    "riotId": "bamboocleaner#kamil",
+    "leaguePoints": 1228,
+    "rarity": "uncommon",
+    "position": "Mid",
+    "attributes": {
+      "mechanics": 77,
+      "gamesense": 66,
+      "teamfighting": 71,
+      "laning": 70,
+      "versatility": 79
+    },
+    "value": 122
+  },
+  {
+    "riotId": "Painful#lol",
+    "leaguePoints": 1223,
+    "rarity": "uncommon",
+    "position": "ADC",
+    "attributes": {
+      "mechanics": 72,
+      "gamesense": 61,
+      "teamfighting": 73,
+      "laning": 70,
+      "versatility": 78
+    },
+    "value": 122
+  },
+  {
+    "riotId": "TTV BAASHH#EUW",
+    "leaguePoints": 1223,
+    "rarity": "uncommon",
+    "position": "ADC",
+    "attributes": {
+      "mechanics": 66,
+      "gamesense": 61,
+      "teamfighting": 70,
+      "laning": 79,
+      "versatility": 72
+    },
+    "value": 122
+  },
+  {
+    "riotId": "Artix von#12345",
+    "leaguePoints": 1223,
+    "rarity": "uncommon",
+    "position": "Jungle",
+    "attributes": {
+      "mechanics": 75,
+      "gamesense": 79,
+      "teamfighting": 62,
+      "laning": 74,
+      "versatility": 69
+    },
+    "value": 122
+  },
+  {
+    "riotId": "indoor fish#EUW",
+    "leaguePoints": 1221,
+    "rarity": "uncommon",
+    "position": "Jungle",
+    "attributes": {
+      "mechanics": 63,
+      "gamesense": 60,
+      "teamfighting": 74,
+      "laning": 77,
+      "versatility": 73
+    },
+    "value": 122
+  },
+  {
+    "riotId": "Rosinante#Rago",
+    "leaguePoints": 1220,
+    "rarity": "uncommon",
+    "position": "Jungle",
+    "attributes": {
+      "mechanics": 68,
+      "gamesense": 69,
+      "teamfighting": 61,
+      "laning": 79,
+      "versatility": 71
+    },
+    "value": 122
+  },
+  {
+    "riotId": "ocsaV#EUW",
+    "leaguePoints": 1220,
+    "rarity": "uncommon",
+    "position": "Jungle",
+    "attributes": {
+      "mechanics": 75,
+      "gamesense": 69,
+      "teamfighting": 65,
+      "laning": 65,
+      "versatility": 71
+    },
+    "value": 122
+  },
+  {
+    "riotId": "RYUVEN 狠心#影子君主",
+    "leaguePoints": 1215,
+    "rarity": "uncommon",
+    "position": "Support",
+    "attributes": {
+      "mechanics": 73,
+      "gamesense": 77,
+      "teamfighting": 73,
+      "laning": 74,
+      "versatility": 71
+    },
+    "value": 121
+  },
+  {
+    "riotId": "Dkdldb#000",
+    "leaguePoints": 1211,
+    "rarity": "uncommon",
+    "position": "Jungle",
+    "attributes": {
+      "mechanics": 66,
+      "gamesense": 72,
+      "teamfighting": 75,
+      "laning": 69,
+      "versatility": 67
+    },
+    "value": 121
+  },
+  {
+    "riotId": "Toto The Totoro#Toffe",
+    "leaguePoints": 1211,
+    "rarity": "uncommon",
+    "position": "ADC",
+    "attributes": {
+      "mechanics": 74,
+      "gamesense": 72,
+      "teamfighting": 69,
+      "laning": 71,
+      "versatility": 76
+    },
+    "value": 121
+  },
+  {
+    "riotId": "mixed emotions#0141",
+    "leaguePoints": 1210,
+    "rarity": "uncommon",
+    "position": "Jungle",
+    "attributes": {
+      "mechanics": 70,
+      "gamesense": 60,
+      "teamfighting": 67,
+      "laning": 67,
+      "versatility": 79
+    },
+    "value": 121
+  },
+  {
+    "riotId": "Sung Jin woo#BAR",
+    "leaguePoints": 1210,
+    "rarity": "uncommon",
+    "position": "Jungle",
+    "attributes": {
+      "mechanics": 77,
+      "gamesense": 64,
+      "teamfighting": 67,
+      "laning": 79,
+      "versatility": 72
+    },
+    "value": 121
+  },
+  {
+    "riotId": "Kaimietis3#EUW",
+    "leaguePoints": 1208,
+    "rarity": "uncommon",
+    "position": "ADC",
+    "attributes": {
+      "mechanics": 78,
+      "gamesense": 63,
+      "teamfighting": 67,
+      "laning": 73,
+      "versatility": 79
+    },
+    "value": 120
+  },
+  {
+    "riotId": "菜刀wangCASINO#ggx",
+    "leaguePoints": 1207,
+    "rarity": "uncommon",
+    "position": "ADC",
+    "attributes": {
+      "mechanics": 64,
+      "gamesense": 68,
+      "teamfighting": 60,
+      "laning": 68,
+      "versatility": 69
+    },
+    "value": 120
+  },
+  {
+    "riotId": "Destined#001",
+    "leaguePoints": 1206,
+    "rarity": "uncommon",
+    "position": "Jungle",
+    "attributes": {
+      "mechanics": 62,
+      "gamesense": 71,
+      "teamfighting": 65,
+      "laning": 73,
+      "versatility": 67
+    },
+    "value": 120
+  },
+  {
+    "riotId": "G2 BrokenBlade#1918",
+    "leaguePoints": 1205,
+    "rarity": "uncommon",
+    "position": "Support",
+    "attributes": {
+      "mechanics": 76,
+      "gamesense": 79,
+      "teamfighting": 79,
+      "laning": 61,
+      "versatility": 78
+    },
+    "value": 120
+  },
+  {
+    "riotId": "Jonathan Bailey#zzz",
+    "leaguePoints": 1203,
+    "rarity": "uncommon",
+    "position": "Support",
+    "attributes": {
+      "mechanics": 78,
+      "gamesense": 63,
+      "teamfighting": 60,
+      "laning": 62,
+      "versatility": 72
+    },
+    "value": 120
+  },
+  {
+    "riotId": "alvarooo#EUW",
+    "leaguePoints": 1203,
+    "rarity": "uncommon",
+    "position": "Top",
+    "attributes": {
+      "mechanics": 72,
+      "gamesense": 77,
+      "teamfighting": 73,
+      "laning": 64,
+      "versatility": 68
+    },
+    "value": 120
+  },
+  {
+    "riotId": "Biotic#123",
+    "leaguePoints": 1203,
+    "rarity": "uncommon",
+    "position": "ADC",
+    "attributes": {
+      "mechanics": 63,
+      "gamesense": 77,
+      "teamfighting": 65,
+      "laning": 68,
+      "versatility": 65
+    },
+    "value": 120
+  },
+  {
+    "riotId": "alix de souza#1111",
+    "leaguePoints": 1203,
+    "rarity": "uncommon",
+    "position": "Top",
+    "attributes": {
+      "mechanics": 63,
+      "gamesense": 71,
+      "teamfighting": 78,
+      "laning": 68,
+      "versatility": 68
+    },
+    "value": 120
+  },
+  {
+    "riotId": "bluerzor#grind",
+    "leaguePoints": 1202,
+    "rarity": "uncommon",
+    "position": "Support",
+    "attributes": {
+      "mechanics": 72,
+      "gamesense": 65,
+      "teamfighting": 79,
+      "laning": 60,
+      "versatility": 61
+    },
+    "value": 120
+  },
+  {
+    "riotId": "elramir#3161",
+    "leaguePoints": 1201,
+    "rarity": "uncommon",
+    "position": "Mid",
+    "attributes": {
+      "mechanics": 72,
+      "gamesense": 62,
+      "teamfighting": 62,
+      "laning": 74,
+      "versatility": 65
+    },
+    "value": 120
+  },
+  {
+    "riotId": "Night Slayer#SLAAY",
+    "leaguePoints": 1200,
+    "rarity": "uncommon",
+    "position": "Mid",
+    "attributes": {
+      "mechanics": 75,
+      "gamesense": 62,
+      "teamfighting": 73,
+      "laning": 66,
+      "versatility": 73
+    },
+    "value": 120
+  },
+  {
+    "riotId": "FireAscept#334",
+    "leaguePoints": 1199,
+    "rarity": "common",
+    "position": "Mid",
+    "attributes": {
+      "mechanics": 62,
+      "gamesense": 50,
+      "teamfighting": 65,
+      "laning": 59,
+      "versatility": 68
+    },
+    "value": 119
+  },
+  {
+    "riotId": "TakeSet sama#stine",
+    "leaguePoints": 1198,
+    "rarity": "common",
+    "position": "ADC",
+    "attributes": {
+      "mechanics": 59,
+      "gamesense": 60,
+      "teamfighting": 60,
+      "laning": 53,
+      "versatility": 69
+    },
+    "value": 119
+  },
+  {
+    "riotId": "LR Nemesis#LRAT",
+    "leaguePoints": 1197,
+    "rarity": "common",
+    "position": "ADC",
+    "attributes": {
+      "mechanics": 54,
+      "gamesense": 52,
+      "teamfighting": 62,
+      "laning": 56,
+      "versatility": 52
+    },
+    "value": 119
+  },
+  {
+    "riotId": "septico1#EUW",
+    "leaguePoints": 1196,
+    "rarity": "common",
+    "position": "Top",
+    "attributes": {
+      "mechanics": 60,
+      "gamesense": 61,
+      "teamfighting": 50,
+      "laning": 62,
+      "versatility": 55
+    },
+    "value": 119
+  },
+  {
+    "riotId": "GW Matias#971",
+    "leaguePoints": 1195,
+    "rarity": "common",
+    "position": "Top",
+    "attributes": {
+      "mechanics": 66,
+      "gamesense": 55,
+      "teamfighting": 66,
+      "laning": 64,
+      "versatility": 51
+    },
+    "value": 119
+  },
+  {
+    "riotId": "Jankos#MYBAD",
+    "leaguePoints": 1194,
+    "rarity": "common",
+    "position": "ADC",
+    "attributes": {
+      "mechanics": 63,
+      "gamesense": 68,
+      "teamfighting": 65,
+      "laning": 64,
+      "versatility": 69
+    },
+    "value": 119
+  },
+  {
+    "riotId": "the inescapable#RAT",
+    "leaguePoints": 1193,
+    "rarity": "common",
+    "position": "ADC",
+    "attributes": {
+      "mechanics": 53,
+      "gamesense": 54,
+      "teamfighting": 64,
+      "laning": 57,
+      "versatility": 62
+    },
+    "value": 119
+  },
+  {
+    "riotId": "Notiko#EUW01",
+    "leaguePoints": 1189,
+    "rarity": "common",
+    "position": "Jungle",
+    "attributes": {
+      "mechanics": 51,
+      "gamesense": 68,
+      "teamfighting": 51,
+      "laning": 54,
+      "versatility": 58
+    },
+    "value": 118
+  },
+  {
+    "riotId": "Szygenda#EUW",
+    "leaguePoints": 1188,
+    "rarity": "common",
+    "position": "ADC",
+    "attributes": {
+      "mechanics": 50,
+      "gamesense": 69,
+      "teamfighting": 57,
+      "laning": 63,
+      "versatility": 62
+    },
+    "value": 118
+  },
+  {
+    "riotId": "Badz#777",
+    "leaguePoints": 1184,
+    "rarity": "common",
+    "position": "Mid",
+    "attributes": {
+      "mechanics": 65,
+      "gamesense": 59,
+      "teamfighting": 62,
+      "laning": 69,
+      "versatility": 63
+    },
+    "value": 118
+  },
+  {
+    "riotId": "Sayn CHOKBAR 1#EUW",
+    "leaguePoints": 1181,
+    "rarity": "common",
+    "position": "ADC",
+    "attributes": {
+      "mechanics": 55,
+      "gamesense": 59,
+      "teamfighting": 62,
+      "laning": 64,
+      "versatility": 67
+    },
+    "value": 118
+  },
+  {
+    "riotId": "sendgoodsongs#4273",
+    "leaguePoints": 1181,
+    "rarity": "common",
+    "position": "Support",
+    "attributes": {
+      "mechanics": 53,
+      "gamesense": 67,
+      "teamfighting": 62,
+      "laning": 55,
+      "versatility": 63
+    },
+    "value": 118
+  },
+  {
+    "riotId": "Shinso#miaou",
+    "leaguePoints": 1181,
+    "rarity": "common",
+    "position": "Support",
+    "attributes": {
+      "mechanics": 60,
+      "gamesense": 51,
+      "teamfighting": 67,
+      "laning": 57,
+      "versatility": 67
+    },
+    "value": 118
+  },
+  {
+    "riotId": "komanche uchiha#elite",
+    "leaguePoints": 1180,
+    "rarity": "common",
+    "position": "Support",
+    "attributes": {
+      "mechanics": 63,
+      "gamesense": 53,
+      "teamfighting": 59,
+      "laning": 58,
+      "versatility": 52
+    },
+    "value": 118
+  },
+  {
+    "riotId": "fantomisto#MID",
+    "leaguePoints": 1179,
+    "rarity": "common",
+    "position": "Jungle",
+    "attributes": {
+      "mechanics": 63,
+      "gamesense": 57,
+      "teamfighting": 55,
+      "laning": 51,
+      "versatility": 52
+    },
+    "value": 117
+  },
+  {
+    "riotId": "Smolder Dad#0301",
+    "leaguePoints": 1176,
+    "rarity": "common",
+    "position": "Mid",
+    "attributes": {
+      "mechanics": 51,
+      "gamesense": 60,
+      "teamfighting": 62,
+      "laning": 58,
+      "versatility": 61
+    },
+    "value": 117
+  },
+  {
+    "riotId": "KappaChungiLungi#DELUX",
+    "leaguePoints": 1176,
+    "rarity": "common",
+    "position": "Top",
+    "attributes": {
+      "mechanics": 63,
+      "gamesense": 65,
+      "teamfighting": 62,
+      "laning": 54,
+      "versatility": 55
+    },
+    "value": 117
+  },
+  {
+    "riotId": "Snoop Dogg#PLYCK",
+    "leaguePoints": 1175,
+    "rarity": "common",
+    "position": "Support",
+    "attributes": {
+      "mechanics": 67,
+      "gamesense": 50,
+      "teamfighting": 60,
+      "laning": 63,
+      "versatility": 51
+    },
+    "value": 117
+  },
+  {
+    "riotId": "TOG Six10#EUW3",
+    "leaguePoints": 1173,
+    "rarity": "common",
+    "position": "Mid",
+    "attributes": {
+      "mechanics": 63,
+      "gamesense": 59,
+      "teamfighting": 60,
+      "laning": 68,
+      "versatility": 59
+    },
+    "value": 117
+  },
+  {
+    "riotId": "Domeeee#1806",
+    "leaguePoints": 1166,
+    "rarity": "common",
+    "position": "Top",
+    "attributes": {
+      "mechanics": 57,
+      "gamesense": 57,
+      "teamfighting": 50,
+      "laning": 67,
+      "versatility": 68
+    },
+    "value": 116
+  },
+  {
+    "riotId": "kzxktobxkut#EUW",
+    "leaguePoints": 1165,
+    "rarity": "common",
+    "position": "Support",
+    "attributes": {
+      "mechanics": 69,
+      "gamesense": 59,
+      "teamfighting": 65,
+      "laning": 67,
+      "versatility": 52
+    },
+    "value": 116
+  },
+  {
+    "riotId": "yebit#haha",
+    "leaguePoints": 1164,
+    "rarity": "common",
+    "position": "ADC",
+    "attributes": {
+      "mechanics": 53,
+      "gamesense": 55,
+      "teamfighting": 59,
+      "laning": 59,
+      "versatility": 57
+    },
+    "value": 116
+  },
+  {
+    "riotId": "TheShygenda#EUW",
+    "leaguePoints": 1163,
+    "rarity": "common",
+    "position": "Support",
+    "attributes": {
+      "mechanics": 65,
+      "gamesense": 65,
+      "teamfighting": 66,
+      "laning": 58,
+      "versatility": 60
+    },
+    "value": 116
+  },
+  {
+    "riotId": "ismααα#EUW",
+    "leaguePoints": 1159,
+    "rarity": "common",
+    "position": "Jungle",
+    "attributes": {
+      "mechanics": 66,
+      "gamesense": 59,
+      "teamfighting": 62,
+      "laning": 53,
+      "versatility": 51
+    },
+    "value": 115
+  },
+  {
+    "riotId": "GNOME#MAGIC",
+    "leaguePoints": 1156,
+    "rarity": "common",
+    "position": "ADC",
+    "attributes": {
+      "mechanics": 50,
+      "gamesense": 68,
+      "teamfighting": 52,
+      "laning": 58,
+      "versatility": 65
+    },
+    "value": 115
+  },
+  {
+    "riotId": "Yen is my Wife#EUW",
+    "leaguePoints": 1156,
+    "rarity": "common",
+    "position": "Jungle",
+    "attributes": {
+      "mechanics": 53,
+      "gamesense": 57,
+      "teamfighting": 64,
+      "laning": 61,
+      "versatility": 53
+    },
+    "value": 115
+  },
+  {
+    "riotId": "Desperate Nasus#EUW",
+    "leaguePoints": 1156,
+    "rarity": "common",
+    "position": "Top",
+    "attributes": {
+      "mechanics": 51,
+      "gamesense": 51,
+      "teamfighting": 64,
+      "laning": 54,
+      "versatility": 64
+    },
+    "value": 115
+  },
+  {
+    "riotId": "c0st0m#dane",
+    "leaguePoints": 1156,
+    "rarity": "common",
+    "position": "Top",
+    "attributes": {
+      "mechanics": 63,
+      "gamesense": 51,
+      "teamfighting": 59,
+      "laning": 67,
+      "versatility": 67
+    },
+    "value": 115
+  },
+  {
+    "riotId": "DesperateNasus#TWTV",
+    "leaguePoints": 1155,
+    "rarity": "common",
+    "position": "Top",
+    "attributes": {
+      "mechanics": 64,
+      "gamesense": 51,
+      "teamfighting": 66,
+      "laning": 53,
+      "versatility": 52
+    },
+    "value": 115
+  },
+  {
+    "riotId": "wariacik lolowy#2008",
+    "leaguePoints": 1154,
+    "rarity": "common",
+    "position": "Jungle",
+    "attributes": {
+      "mechanics": 59,
+      "gamesense": 61,
+      "teamfighting": 69,
+      "laning": 66,
+      "versatility": 61
+    },
+    "value": 115
+  },
+  {
+    "riotId": "Juif et puissant#EUW",
+    "leaguePoints": 1152,
+    "rarity": "common",
+    "position": "Mid",
+    "attributes": {
+      "mechanics": 62,
+      "gamesense": 67,
+      "teamfighting": 60,
+      "laning": 51,
+      "versatility": 56
+    },
+    "value": 115
+  },
+  {
+    "riotId": "Ttv KoalachanLoL#TTV",
+    "leaguePoints": 1150,
+    "rarity": "common",
+    "position": "Support",
+    "attributes": {
+      "mechanics": 66,
+      "gamesense": 64,
+      "teamfighting": 58,
+      "laning": 53,
+      "versatility": 55
+    },
+    "value": 115
+  },
+  {
+    "riotId": "SKULLKNIGHT#00001",
+    "leaguePoints": 1150,
+    "rarity": "common",
+    "position": "Top",
+    "attributes": {
+      "mechanics": 50,
+      "gamesense": 56,
+      "teamfighting": 60,
+      "laning": 57,
+      "versatility": 58
+    },
+    "value": 115
+  },
+  {
+    "riotId": "c0cky movement#tukan",
+    "leaguePoints": 1149,
+    "rarity": "common",
+    "position": "Support",
+    "attributes": {
+      "mechanics": 53,
+      "gamesense": 52,
+      "teamfighting": 59,
+      "laning": 62,
+      "versatility": 61
+    },
+    "value": 114
+  },
+  {
+    "riotId": "Howling#321",
+    "leaguePoints": 1148,
+    "rarity": "common",
+    "position": "Support",
+    "attributes": {
+      "mechanics": 56,
+      "gamesense": 67,
+      "teamfighting": 68,
+      "laning": 69,
+      "versatility": 54
+    },
+    "value": 114
+  },
+  {
+    "riotId": "Nillee#EUW",
+    "leaguePoints": 1142,
+    "rarity": "common",
+    "position": "Jungle",
+    "attributes": {
+      "mechanics": 56,
+      "gamesense": 60,
+      "teamfighting": 58,
+      "laning": 50,
+      "versatility": 68
+    },
+    "value": 114
+  },
+  {
+    "riotId": "Januaryneverends#EU1",
+    "leaguePoints": 1141,
+    "rarity": "common",
+    "position": "Mid",
+    "attributes": {
+      "mechanics": 56,
+      "gamesense": 61,
+      "teamfighting": 61,
+      "laning": 53,
+      "versatility": 68
+    },
+    "value": 114
+  },
+  {
+    "riotId": "Rush B P90#PT1",
+    "leaguePoints": 1139,
+    "rarity": "common",
+    "position": "Mid",
+    "attributes": {
+      "mechanics": 67,
+      "gamesense": 50,
+      "teamfighting": 55,
+      "laning": 57,
+      "versatility": 62
+    },
+    "value": 113
+  },
+  {
+    "riotId": "nvid#4PIGS",
+    "leaguePoints": 1138,
+    "rarity": "common",
+    "position": "Support",
+    "attributes": {
+      "mechanics": 58,
+      "gamesense": 66,
+      "teamfighting": 66,
+      "laning": 54,
+      "versatility": 62
+    },
+    "value": 113
+  },
+  {
+    "riotId": "GOTHGIRL69#UWU",
+    "leaguePoints": 1137,
+    "rarity": "common",
+    "position": "Top",
+    "attributes": {
+      "mechanics": 57,
+      "gamesense": 62,
+      "teamfighting": 53,
+      "laning": 68,
+      "versatility": 50
+    },
+    "value": 113
+  },
+  {
+    "riotId": "faker baIIsack#0000",
+    "leaguePoints": 1137,
+    "rarity": "common",
+    "position": "Top",
+    "attributes": {
+      "mechanics": 60,
+      "gamesense": 54,
+      "teamfighting": 61,
+      "laning": 61,
+      "versatility": 61
+    },
+    "value": 113
+  },
+  {
+    "riotId": "TwTv EkkoSuna#2526",
+    "leaguePoints": 1136,
+    "rarity": "common",
+    "position": "Top",
+    "attributes": {
+      "mechanics": 52,
+      "gamesense": 60,
+      "teamfighting": 65,
+      "laning": 52,
+      "versatility": 57
+    },
+    "value": 113
+  },
+  {
+    "riotId": "qweasdfqwea#2506",
+    "leaguePoints": 1136,
+    "rarity": "common",
+    "position": "Support",
+    "attributes": {
+      "mechanics": 52,
+      "gamesense": 60,
+      "teamfighting": 53,
+      "laning": 50,
+      "versatility": 64
+    },
+    "value": 113
+  },
+  {
+    "riotId": "GrompulusKevinº#EUW",
+    "leaguePoints": 1132,
+    "rarity": "common",
+    "position": "Mid",
+    "attributes": {
+      "mechanics": 69,
+      "gamesense": 56,
+      "teamfighting": 69,
+      "laning": 58,
+      "versatility": 54
+    },
+    "value": 113
+  },
+  {
+    "riotId": "Seonsu#Noula",
+    "leaguePoints": 1131,
+    "rarity": "common",
+    "position": "ADC",
+    "attributes": {
+      "mechanics": 68,
+      "gamesense": 57,
+      "teamfighting": 60,
+      "laning": 55,
+      "versatility": 52
+    },
+    "value": 113
+  },
+  {
+    "riotId": "avarice61#PCS",
+    "leaguePoints": 1131,
+    "rarity": "common",
+    "position": "Jungle",
+    "attributes": {
+      "mechanics": 64,
+      "gamesense": 59,
+      "teamfighting": 58,
+      "laning": 53,
+      "versatility": 52
+    },
+    "value": 113
+  },
+  {
+    "riotId": "Raydioactiveman#0052",
+    "leaguePoints": 1130,
+    "rarity": "common",
+    "position": "ADC",
+    "attributes": {
+      "mechanics": 51,
+      "gamesense": 51,
+      "teamfighting": 54,
+      "laning": 51,
+      "versatility": 68
+    },
+    "value": 113
+  },
+  {
+    "riotId": "Ryuk#adc",
+    "leaguePoints": 1128,
+    "rarity": "common",
+    "position": "Support",
+    "attributes": {
+      "mechanics": 55,
+      "gamesense": 59,
+      "teamfighting": 52,
+      "laning": 66,
+      "versatility": 65
+    },
+    "value": 112
+  },
+  {
+    "riotId": "SUP Carry#999",
+    "leaguePoints": 1125,
+    "rarity": "common",
+    "position": "ADC",
+    "attributes": {
+      "mechanics": 52,
+      "gamesense": 51,
+      "teamfighting": 64,
+      "laning": 65,
+      "versatility": 62
+    },
+    "value": 112
+  },
+  {
+    "riotId": "Soldier#Asu",
+    "leaguePoints": 1125,
+    "rarity": "common",
+    "position": "Mid",
+    "attributes": {
+      "mechanics": 51,
+      "gamesense": 59,
+      "teamfighting": 64,
+      "laning": 62,
+      "versatility": 60
+    },
+    "value": 112
+  },
+  {
+    "riotId": "Chill1000#larry",
+    "leaguePoints": 1124,
+    "rarity": "common",
+    "position": "Top",
+    "attributes": {
+      "mechanics": 51,
+      "gamesense": 58,
+      "teamfighting": 54,
+      "laning": 60,
+      "versatility": 59
+    },
+    "value": 112
+  },
+  {
+    "riotId": "JEZUUU#0814",
+    "leaguePoints": 1124,
+    "rarity": "common",
+    "position": "ADC",
+    "attributes": {
+      "mechanics": 63,
+      "gamesense": 57,
+      "teamfighting": 50,
+      "laning": 51,
+      "versatility": 54
+    },
+    "value": 112
+  },
+  {
+    "riotId": "Dinosaur#RAWRz",
+    "leaguePoints": 1124,
+    "rarity": "common",
+    "position": "Mid",
+    "attributes": {
+      "mechanics": 50,
+      "gamesense": 54,
+      "teamfighting": 63,
+      "laning": 51,
+      "versatility": 62
+    },
+    "value": 112
+  },
+  {
+    "riotId": "GX Francisco#GOAT",
+    "leaguePoints": 1123,
+    "rarity": "common",
+    "position": "Support",
+    "attributes": {
+      "mechanics": 65,
+      "gamesense": 60,
+      "teamfighting": 64,
+      "laning": 55,
+      "versatility": 67
+    },
+    "value": 112
+  },
+  {
+    "riotId": "maciek11#joker",
+    "leaguePoints": 1123,
+    "rarity": "common",
+    "position": "Support",
+    "attributes": {
+      "mechanics": 68,
+      "gamesense": 66,
+      "teamfighting": 55,
+      "laning": 60,
+      "versatility": 52
+    },
+    "value": 112
+  },
+  {
+    "riotId": "WiIIyrex Fanboy#EUW",
+    "leaguePoints": 1120,
+    "rarity": "common",
+    "position": "Top",
+    "attributes": {
+      "mechanics": 57,
+      "gamesense": 56,
+      "teamfighting": 64,
+      "laning": 67,
+      "versatility": 64
+    },
+    "value": 112
+  },
+  {
+    "riotId": "Kiro#rain",
+    "leaguePoints": 1120,
+    "rarity": "common",
+    "position": "Support",
+    "attributes": {
+      "mechanics": 67,
+      "gamesense": 51,
+      "teamfighting": 68,
+      "laning": 52,
+      "versatility": 62
+    },
+    "value": 112
+  },
+  {
+    "riotId": "Abo obidaaa#111",
+    "leaguePoints": 1120,
+    "rarity": "common",
+    "position": "Jungle",
+    "attributes": {
+      "mechanics": 54,
+      "gamesense": 64,
+      "teamfighting": 50,
+      "laning": 62,
+      "versatility": 69
+    },
+    "value": 112
+  },
+  {
+    "riotId": "xKenzuke#1453",
+    "leaguePoints": 1120,
+    "rarity": "common",
+    "position": "ADC",
+    "attributes": {
+      "mechanics": 64,
+      "gamesense": 69,
+      "teamfighting": 52,
+      "laning": 52,
+      "versatility": 64
+    },
+    "value": 112
+  },
+  {
+    "riotId": "Woldjo#2005",
+    "leaguePoints": 1119,
+    "rarity": "common",
+    "position": "Support",
+    "attributes": {
+      "mechanics": 56,
+      "gamesense": 59,
+      "teamfighting": 58,
+      "laning": 56,
+      "versatility": 60
+    },
+    "value": 111
+  },
+  {
+    "riotId": "iamsobek#7777",
+    "leaguePoints": 1119,
+    "rarity": "common",
+    "position": "Top",
+    "attributes": {
+      "mechanics": 64,
+      "gamesense": 65,
+      "teamfighting": 69,
+      "laning": 51,
+      "versatility": 51
+    },
+    "value": 111
+  },
+  {
+    "riotId": "LR Rekkles#SUP",
+    "leaguePoints": 1119,
+    "rarity": "common",
+    "position": "Top",
+    "attributes": {
+      "mechanics": 62,
+      "gamesense": 69,
+      "teamfighting": 57,
+      "laning": 64,
+      "versatility": 61
+    },
+    "value": 111
+  },
+  {
+    "riotId": "Itsallindetails#UKR",
+    "leaguePoints": 1117,
+    "rarity": "common",
+    "position": "Support",
+    "attributes": {
+      "mechanics": 50,
+      "gamesense": 66,
+      "teamfighting": 55,
+      "laning": 68,
+      "versatility": 63
+    },
+    "value": 111
+  },
+  {
+    "riotId": "chaaz47STA#NNIS",
+    "leaguePoints": 1116,
+    "rarity": "common",
+    "position": "Jungle",
+    "attributes": {
+      "mechanics": 55,
+      "gamesense": 53,
+      "teamfighting": 68,
+      "laning": 66,
+      "versatility": 61
+    },
+    "value": 111
+  },
+  {
+    "riotId": "Finn#0306",
+    "leaguePoints": 1114,
+    "rarity": "common",
+    "position": "ADC",
+    "attributes": {
+      "mechanics": 50,
+      "gamesense": 52,
+      "teamfighting": 64,
+      "laning": 56,
+      "versatility": 57
+    },
+    "value": 111
+  },
+  {
+    "riotId": "Journeys End#Gwyn",
+    "leaguePoints": 1113,
+    "rarity": "common",
+    "position": "Support",
+    "attributes": {
+      "mechanics": 62,
+      "gamesense": 50,
+      "teamfighting": 50,
+      "laning": 57,
+      "versatility": 53
+    },
+    "value": 111
+  },
+  {
+    "riotId": "wolorz#1481",
+    "leaguePoints": 1111,
+    "rarity": "common",
+    "position": "Support",
+    "attributes": {
+      "mechanics": 64,
+      "gamesense": 52,
+      "teamfighting": 56,
+      "laning": 62,
+      "versatility": 55
+    },
+    "value": 111
+  },
+  {
+    "riotId": "noobsupp#noob",
+    "leaguePoints": 1110,
+    "rarity": "common",
+    "position": "Support",
+    "attributes": {
+      "mechanics": 55,
+      "gamesense": 67,
+      "teamfighting": 61,
+      "laning": 69,
+      "versatility": 57
+    },
+    "value": 111
+  },
+  {
+    "riotId": "star zall#twtv",
+    "leaguePoints": 1108,
+    "rarity": "common",
+    "position": "ADC",
+    "attributes": {
+      "mechanics": 63,
+      "gamesense": 57,
+      "teamfighting": 69,
+      "laning": 65,
+      "versatility": 64
+    },
+    "value": 110
+  },
+  {
+    "riotId": "gkucqklg#EUW",
+    "leaguePoints": 1106,
+    "rarity": "common",
+    "position": "ADC",
+    "attributes": {
+      "mechanics": 50,
+      "gamesense": 54,
+      "teamfighting": 61,
+      "laning": 51,
+      "versatility": 67
+    },
+    "value": 110
+  },
+  {
+    "riotId": "Zwyrøø#soul",
+    "leaguePoints": 1105,
+    "rarity": "common",
+    "position": "ADC",
+    "attributes": {
+      "mechanics": 58,
+      "gamesense": 65,
+      "teamfighting": 69,
+      "laning": 59,
+      "versatility": 60
+    },
+    "value": 110
+  },
+  {
+    "riotId": "Unbrøken#RIVEN",
+    "leaguePoints": 1104,
+    "rarity": "common",
+    "position": "Mid",
+    "attributes": {
+      "mechanics": 62,
+      "gamesense": 55,
+      "teamfighting": 52,
+      "laning": 67,
+      "versatility": 67
+    },
+    "value": 110
+  },
+  {
+    "riotId": "yuros#1205",
+    "leaguePoints": 1104,
+    "rarity": "common",
+    "position": "ADC",
+    "attributes": {
+      "mechanics": 58,
+      "gamesense": 65,
+      "teamfighting": 69,
+      "laning": 50,
+      "versatility": 66
+    },
+    "value": 110
+  },
+  {
+    "riotId": "Mazs#EUW",
+    "leaguePoints": 1104,
+    "rarity": "common",
+    "position": "Mid",
+    "attributes": {
+      "mechanics": 55,
+      "gamesense": 51,
+      "teamfighting": 51,
+      "laning": 64,
+      "versatility": 62
+    },
+    "value": 110
+  },
+  {
+    "riotId": "Skillshot Lander#EUW",
+    "leaguePoints": 1103,
+    "rarity": "common",
+    "position": "ADC",
+    "attributes": {
+      "mechanics": 59,
+      "gamesense": 50,
+      "teamfighting": 56,
+      "laning": 57,
+      "versatility": 54
+    },
+    "value": 110
+  },
+  {
+    "riotId": "qweasdx#EUW",
+    "leaguePoints": 1103,
+    "rarity": "common",
+    "position": "Top",
+    "attributes": {
+      "mechanics": 59,
+      "gamesense": 56,
+      "teamfighting": 60,
+      "laning": 63,
+      "versatility": 51
+    },
+    "value": 110
+  },
+  {
+    "riotId": "VOICES TOOK OVER#LOLXD",
+    "leaguePoints": 1101,
+    "rarity": "common",
+    "position": "ADC",
+    "attributes": {
+      "mechanics": 65,
+      "gamesense": 60,
+      "teamfighting": 52,
+      "laning": 60,
+      "versatility": 52
+    },
+    "value": 110
+  },
+  {
+    "riotId": "Decay0#EUW",
+    "leaguePoints": 1101,
+    "rarity": "common",
+    "position": "ADC",
+    "attributes": {
+      "mechanics": 51,
+      "gamesense": 64,
+      "teamfighting": 57,
+      "laning": 54,
+      "versatility": 55
+    },
+    "value": 110
+  },
+  {
+    "riotId": "NightyNN2#2222",
+    "leaguePoints": 1101,
+    "rarity": "common",
+    "position": "Jungle",
+    "attributes": {
+      "mechanics": 57,
+      "gamesense": 61,
+      "teamfighting": 61,
+      "laning": 54,
+      "versatility": 63
+    },
+    "value": 110
+  },
+  {
+    "riotId": "why lose#whyyy",
+    "leaguePoints": 1100,
+    "rarity": "common",
+    "position": "Top",
+    "attributes": {
+      "mechanics": 58,
+      "gamesense": 53,
+      "teamfighting": 54,
+      "laning": 56,
+      "versatility": 58
+    },
+    "value": 110
+  },
+  {
+    "riotId": "K Man#EUW12",
+    "leaguePoints": 1100,
+    "rarity": "common",
+    "position": "Mid",
+    "attributes": {
+      "mechanics": 68,
+      "gamesense": 63,
+      "teamfighting": 66,
+      "laning": 53,
+      "versatility": 54
+    },
+    "value": 110
+  },
+  {
+    "riotId": "Feistyy#1219",
+    "leaguePoints": 1098,
+    "rarity": "common",
+    "position": "Top",
+    "attributes": {
+      "mechanics": 63,
+      "gamesense": 55,
+      "teamfighting": 56,
+      "laning": 69,
+      "versatility": 50
+    },
+    "value": 109
+  },
+  {
+    "riotId": "THE GREATEST#xanny",
+    "leaguePoints": 1098,
+    "rarity": "common",
+    "position": "Mid",
+    "attributes": {
+      "mechanics": 53,
+      "gamesense": 53,
+      "teamfighting": 55,
+      "laning": 50,
+      "versatility": 55
+    },
+    "value": 109
+  },
+  {
+    "riotId": "Lurox#Lurox",
+    "leaguePoints": 1098,
+    "rarity": "common",
+    "position": "Mid",
+    "attributes": {
+      "mechanics": 54,
+      "gamesense": 60,
+      "teamfighting": 61,
+      "laning": 57,
+      "versatility": 62
+    },
+    "value": 109
+  },
+  {
+    "riotId": "Juan Gasolina#EUW",
+    "leaguePoints": 1098,
+    "rarity": "common",
+    "position": "Mid",
+    "attributes": {
+      "mechanics": 61,
+      "gamesense": 51,
+      "teamfighting": 65,
+      "laning": 66,
+      "versatility": 58
+    },
+    "value": 109
+  },
+  {
+    "riotId": "brelia4real#EUW",
+    "leaguePoints": 1098,
+    "rarity": "common",
+    "position": "ADC",
+    "attributes": {
+      "mechanics": 67,
+      "gamesense": 59,
+      "teamfighting": 57,
+      "laning": 64,
+      "versatility": 53
+    },
+    "value": 109
+  },
+  {
+    "riotId": "Aggressive Play#EUW",
+    "leaguePoints": 1097,
+    "rarity": "common",
+    "position": "Support",
+    "attributes": {
+      "mechanics": 69,
+      "gamesense": 58,
+      "teamfighting": 59,
+      "laning": 54,
+      "versatility": 69
+    },
+    "value": 109
+  },
+  {
+    "riotId": "unforgiven#12321",
+    "leaguePoints": 1097,
+    "rarity": "common",
+    "position": "ADC",
+    "attributes": {
+      "mechanics": 61,
+      "gamesense": 57,
+      "teamfighting": 51,
+      "laning": 54,
+      "versatility": 58
+    },
+    "value": 109
+  },
+  {
+    "riotId": "Dark Wanderer#2956",
+    "leaguePoints": 1097,
+    "rarity": "common",
+    "position": "Mid",
+    "attributes": {
+      "mechanics": 55,
+      "gamesense": 63,
+      "teamfighting": 56,
+      "laning": 59,
+      "versatility": 69
+    },
+    "value": 109
+  },
+  {
+    "riotId": "Pyrka#EUW4",
+    "leaguePoints": 1096,
+    "rarity": "common",
+    "position": "ADC",
+    "attributes": {
+      "mechanics": 58,
+      "gamesense": 69,
+      "teamfighting": 67,
+      "laning": 69,
+      "versatility": 52
+    },
+    "value": 109
+  },
+  {
+    "riotId": "Τadej Pogačar#Soria",
+    "leaguePoints": 1096,
+    "rarity": "common",
+    "position": "ADC",
+    "attributes": {
+      "mechanics": 52,
+      "gamesense": 53,
+      "teamfighting": 59,
+      "laning": 53,
+      "versatility": 65
+    },
+    "value": 109
+  },
+  {
+    "riotId": "tibor#zzz",
+    "leaguePoints": 1094,
+    "rarity": "common",
+    "position": "ADC",
+    "attributes": {
+      "mechanics": 56,
+      "gamesense": 52,
+      "teamfighting": 53,
+      "laning": 64,
+      "versatility": 59
+    },
+    "value": 109
+  },
+  {
+    "riotId": "Griefzilla#EUW12",
+    "leaguePoints": 1094,
+    "rarity": "common",
+    "position": "Mid",
+    "attributes": {
+      "mechanics": 50,
+      "gamesense": 62,
+      "teamfighting": 61,
+      "laning": 60,
+      "versatility": 62
+    },
+    "value": 109
+  },
+  {
+    "riotId": "Spear Shot#EUW2",
+    "leaguePoints": 1093,
+    "rarity": "common",
+    "position": "ADC",
+    "attributes": {
+      "mechanics": 63,
+      "gamesense": 69,
+      "teamfighting": 66,
+      "laning": 53,
+      "versatility": 50
+    },
+    "value": 109
+  },
+  {
+    "riotId": "asdfasdf#0308",
+    "leaguePoints": 1093,
+    "rarity": "common",
+    "position": "ADC",
+    "attributes": {
+      "mechanics": 57,
+      "gamesense": 58,
+      "teamfighting": 53,
+      "laning": 55,
+      "versatility": 55
+    },
+    "value": 109
+  },
+  {
+    "riotId": "L Vasco O #EUW",
+    "leaguePoints": 1092,
+    "rarity": "common",
+    "position": "ADC",
+    "attributes": {
+      "mechanics": 67,
+      "gamesense": 63,
+      "teamfighting": 65,
+      "laning": 55,
+      "versatility": 67
+    },
+    "value": 109
+  },
+  {
+    "riotId": "PoEs tk#EUW",
+    "leaguePoints": 1092,
+    "rarity": "common",
+    "position": "Jungle",
+    "attributes": {
+      "mechanics": 51,
+      "gamesense": 62,
+      "teamfighting": 59,
+      "laning": 62,
+      "versatility": 57
+    },
+    "value": 109
+  },
+  {
+    "riotId": "TwTv BZ EUW#INSHL",
+    "leaguePoints": 1092,
+    "rarity": "common",
+    "position": "Mid",
+    "attributes": {
+      "mechanics": 63,
+      "gamesense": 52,
+      "teamfighting": 54,
+      "laning": 66,
+      "versatility": 53
+    },
+    "value": 109
+  },
+  {
+    "riotId": "メルエム#king",
+    "leaguePoints": 1091,
+    "rarity": "common",
+    "position": "Jungle",
+    "attributes": {
+      "mechanics": 51,
+      "gamesense": 56,
+      "teamfighting": 56,
+      "laning": 58,
+      "versatility": 54
+    },
+    "value": 109
+  },
+  {
+    "riotId": "DONT GET C#EUW",
+    "leaguePoints": 1091,
+    "rarity": "common",
+    "position": "Support",
+    "attributes": {
+      "mechanics": 59,
+      "gamesense": 67,
+      "teamfighting": 55,
+      "laning": 62,
+      "versatility": 68
+    },
+    "value": 109
+  },
+  {
+    "riotId": "Autumn Leaf#Seal",
+    "leaguePoints": 1090,
+    "rarity": "common",
+    "position": "Top",
+    "attributes": {
+      "mechanics": 67,
+      "gamesense": 63,
+      "teamfighting": 65,
+      "laning": 68,
+      "versatility": 68
+    },
+    "value": 109
+  },
+  {
+    "riotId": "MIDKING#kkkk",
+    "leaguePoints": 1089,
+    "rarity": "common",
+    "position": "Support",
+    "attributes": {
+      "mechanics": 57,
+      "gamesense": 61,
+      "teamfighting": 67,
+      "laning": 67,
+      "versatility": 58
+    },
+    "value": 108
+  },
+  {
+    "riotId": "Noah7#3977",
+    "leaguePoints": 1086,
+    "rarity": "common",
+    "position": "ADC",
+    "attributes": {
+      "mechanics": 66,
+      "gamesense": 52,
+      "teamfighting": 65,
+      "laning": 66,
+      "versatility": 68
+    },
+    "value": 108
+  },
+  {
+    "riotId": "katsing galang#GURU",
+    "leaguePoints": 1086,
+    "rarity": "common",
+    "position": "Jungle",
+    "attributes": {
+      "mechanics": 65,
+      "gamesense": 58,
+      "teamfighting": 59,
+      "laning": 60,
+      "versatility": 69
+    },
+    "value": 108
+  },
+  {
+    "riotId": "Daksider#FOCUS",
+    "leaguePoints": 1086,
+    "rarity": "common",
+    "position": "Mid",
+    "attributes": {
+      "mechanics": 58,
+      "gamesense": 55,
+      "teamfighting": 52,
+      "laning": 51,
+      "versatility": 68
+    },
+    "value": 108
+  },
+  {
+    "riotId": "Berry Bulk#BULK",
+    "leaguePoints": 1086,
+    "rarity": "common",
+    "position": "ADC",
+    "attributes": {
+      "mechanics": 55,
+      "gamesense": 57,
+      "teamfighting": 50,
+      "laning": 62,
+      "versatility": 51
+    },
+    "value": 108
+  },
+  {
+    "riotId": "TOXY#TXY1",
+    "leaguePoints": 1084,
+    "rarity": "common",
+    "position": "ADC",
+    "attributes": {
+      "mechanics": 52,
+      "gamesense": 52,
+      "teamfighting": 65,
+      "laning": 57,
+      "versatility": 56
+    },
+    "value": 108
+  },
+  {
+    "riotId": "Stormaxx#EUW",
+    "leaguePoints": 1084,
+    "rarity": "common",
+    "position": "ADC",
+    "attributes": {
+      "mechanics": 69,
+      "gamesense": 66,
+      "teamfighting": 58,
+      "laning": 67,
+      "versatility": 56
+    },
+    "value": 108
+  },
+  {
+    "riotId": "The Lost Petals#Aimer",
+    "leaguePoints": 1083,
+    "rarity": "common",
+    "position": "Top",
+    "attributes": {
+      "mechanics": 53,
+      "gamesense": 55,
+      "teamfighting": 67,
+      "laning": 57,
+      "versatility": 55
+    },
+    "value": 108
+  },
+  {
+    "riotId": "fear dagger#4810",
+    "leaguePoints": 1081,
+    "rarity": "common",
+    "position": "Support",
+    "attributes": {
+      "mechanics": 58,
+      "gamesense": 54,
+      "teamfighting": 58,
+      "laning": 51,
+      "versatility": 58
+    },
+    "value": 108
+  },
+  {
+    "riotId": "1K99HX6ZSG3726LG#00000",
+    "leaguePoints": 1081,
+    "rarity": "common",
+    "position": "Support",
+    "attributes": {
+      "mechanics": 56,
+      "gamesense": 54,
+      "teamfighting": 68,
+      "laning": 50,
+      "versatility": 69
+    },
+    "value": 108
+  },
+  {
+    "riotId": "rettebeb#11241",
+    "leaguePoints": 1081,
+    "rarity": "common",
+    "position": "Top",
+    "attributes": {
+      "mechanics": 58,
+      "gamesense": 61,
+      "teamfighting": 66,
+      "laning": 50,
+      "versatility": 59
+    },
+    "value": 108
+  },
+  {
+    "riotId": "SC MélyaP#2406",
+    "leaguePoints": 1080,
+    "rarity": "common",
+    "position": "ADC",
+    "attributes": {
+      "mechanics": 64,
+      "gamesense": 56,
+      "teamfighting": 54,
+      "laning": 58,
+      "versatility": 62
+    },
+    "value": 108
+  },
+  {
+    "riotId": "nat#mrrd",
+    "leaguePoints": 1080,
+    "rarity": "common",
+    "position": "Mid",
+    "attributes": {
+      "mechanics": 60,
+      "gamesense": 64,
+      "teamfighting": 62,
+      "laning": 63,
+      "versatility": 53
+    },
+    "value": 108
+  },
+  {
+    "riotId": "B2U Nord#B2U",
+    "leaguePoints": 1080,
+    "rarity": "common",
+    "position": "Mid",
+    "attributes": {
+      "mechanics": 57,
+      "gamesense": 62,
+      "teamfighting": 63,
+      "laning": 50,
+      "versatility": 58
+    },
+    "value": 108
+  },
+  {
+    "riotId": "pickaboowhatchu#doing",
+    "leaguePoints": 1080,
+    "rarity": "common",
+    "position": "Mid",
+    "attributes": {
+      "mechanics": 50,
+      "gamesense": 53,
+      "teamfighting": 69,
+      "laning": 61,
+      "versatility": 57
+    },
+    "value": 108
+  },
+  {
+    "riotId": "Marlboro Edge#kboom",
+    "leaguePoints": 1080,
+    "rarity": "common",
+    "position": "Jungle",
+    "attributes": {
+      "mechanics": 50,
+      "gamesense": 67,
+      "teamfighting": 64,
+      "laning": 52,
+      "versatility": 55
+    },
+    "value": 108
+  },
+  {
+    "riotId": "Joki37#EUW",
+    "leaguePoints": 1079,
+    "rarity": "common",
+    "position": "Mid",
+    "attributes": {
+      "mechanics": 50,
+      "gamesense": 58,
+      "teamfighting": 57,
+      "laning": 60,
+      "versatility": 50
+    },
+    "value": 107
+  },
+  {
+    "riotId": "I WANT BE COACH#0003",
+    "leaguePoints": 1078,
+    "rarity": "common",
+    "position": "Mid",
+    "attributes": {
+      "mechanics": 60,
+      "gamesense": 55,
+      "teamfighting": 60,
+      "laning": 54,
+      "versatility": 51
+    },
+    "value": 107
+  },
+  {
+    "riotId": "BRR BRR PATAPIM#VAYNE",
+    "leaguePoints": 1078,
+    "rarity": "common",
+    "position": "Support",
+    "attributes": {
+      "mechanics": 59,
+      "gamesense": 67,
+      "teamfighting": 68,
+      "laning": 52,
+      "versatility": 56
+    },
+    "value": 107
+  },
+  {
+    "riotId": "humble Marty#EUW",
+    "leaguePoints": 1076,
+    "rarity": "common",
+    "position": "Jungle",
+    "attributes": {
+      "mechanics": 61,
+      "gamesense": 67,
+      "teamfighting": 64,
+      "laning": 69,
+      "versatility": 52
+    },
+    "value": 107
+  },
+  {
+    "riotId": "Nubobo#EUW",
+    "leaguePoints": 1076,
+    "rarity": "common",
+    "position": "Support",
+    "attributes": {
+      "mechanics": 64,
+      "gamesense": 50,
+      "teamfighting": 62,
+      "laning": 69,
+      "versatility": 66
+    },
+    "value": 107
+  },
+  {
+    "riotId": "FF15#2501",
+    "leaguePoints": 1075,
+    "rarity": "common",
+    "position": "Mid",
+    "attributes": {
+      "mechanics": 60,
+      "gamesense": 62,
+      "teamfighting": 66,
+      "laning": 56,
+      "versatility": 59
+    },
+    "value": 107
+  },
+  {
+    "riotId": "Iziio#00000",
+    "leaguePoints": 1075,
+    "rarity": "common",
+    "position": "Jungle",
+    "attributes": {
+      "mechanics": 55,
+      "gamesense": 52,
+      "teamfighting": 59,
+      "laning": 65,
+      "versatility": 68
+    },
+    "value": 107
+  },
+  {
+    "riotId": "Afriibi#AFB",
+    "leaguePoints": 1075,
+    "rarity": "common",
+    "position": "Support",
+    "attributes": {
+      "mechanics": 53,
+      "gamesense": 59,
+      "teamfighting": 61,
+      "laning": 53,
+      "versatility": 52
+    },
+    "value": 107
+  },
+  {
+    "riotId": "asfdasfd#afsd",
+    "leaguePoints": 1075,
+    "rarity": "common",
+    "position": "Jungle",
+    "attributes": {
+      "mechanics": 54,
+      "gamesense": 55,
+      "teamfighting": 54,
+      "laning": 52,
+      "versatility": 52
+    },
+    "value": 107
+  },
+  {
+    "riotId": "Cribob#EUW0",
+    "leaguePoints": 1074,
+    "rarity": "common",
+    "position": "Jungle",
+    "attributes": {
+      "mechanics": 66,
+      "gamesense": 66,
+      "teamfighting": 61,
+      "laning": 60,
+      "versatility": 57
+    },
+    "value": 107
+  },
+  {
+    "riotId": "Maxlore#EUW",
+    "leaguePoints": 1074,
+    "rarity": "common",
+    "position": "Top",
+    "attributes": {
+      "mechanics": 63,
+      "gamesense": 69,
+      "teamfighting": 51,
+      "laning": 67,
+      "versatility": 56
+    },
+    "value": 107
+  },
+  {
+    "riotId": "Boltox#EUW",
+    "leaguePoints": 1073,
+    "rarity": "common",
+    "position": "ADC",
+    "attributes": {
+      "mechanics": 52,
+      "gamesense": 53,
+      "teamfighting": 61,
+      "laning": 68,
+      "versatility": 52
+    },
+    "value": 107
+  },
+  {
+    "riotId": "Only Spatula#999",
+    "leaguePoints": 1073,
+    "rarity": "common",
+    "position": "ADC",
+    "attributes": {
+      "mechanics": 60,
+      "gamesense": 57,
+      "teamfighting": 55,
+      "laning": 56,
+      "versatility": 69
+    },
+    "value": 107
+  },
+  {
+    "riotId": "aarontheplumber#MrJay",
+    "leaguePoints": 1073,
+    "rarity": "common",
+    "position": "Jungle",
+    "attributes": {
+      "mechanics": 62,
+      "gamesense": 52,
+      "teamfighting": 58,
+      "laning": 64,
+      "versatility": 54
+    },
+    "value": 107
+  },
+  {
+    "riotId": "Loose Ends999#EUW",
+    "leaguePoints": 1072,
+    "rarity": "common",
+    "position": "Mid",
+    "attributes": {
+      "mechanics": 69,
+      "gamesense": 69,
+      "teamfighting": 57,
+      "laning": 52,
+      "versatility": 66
+    },
+    "value": 107
+  },
+  {
+    "riotId": "ΑrchΦiend#666",
+    "leaguePoints": 1072,
+    "rarity": "common",
+    "position": "Mid",
+    "attributes": {
+      "mechanics": 52,
+      "gamesense": 67,
+      "teamfighting": 54,
+      "laning": 66,
+      "versatility": 58
+    },
+    "value": 107
+  },
+  {
+    "riotId": "Bayo#x123",
+    "leaguePoints": 1072,
+    "rarity": "common",
+    "position": "Top",
+    "attributes": {
+      "mechanics": 59,
+      "gamesense": 60,
+      "teamfighting": 53,
+      "laning": 61,
+      "versatility": 69
+    },
+    "value": 107
+  },
+  {
+    "riotId": "Turret Syndrome#HEIM",
+    "leaguePoints": 1072,
+    "rarity": "common",
+    "position": "Mid",
+    "attributes": {
+      "mechanics": 58,
+      "gamesense": 60,
+      "teamfighting": 61,
+      "laning": 59,
+      "versatility": 51
+    },
+    "value": 107
+  },
+  {
+    "riotId": "Knurble MID#5555",
+    "leaguePoints": 1072,
+    "rarity": "common",
+    "position": "Mid",
+    "attributes": {
+      "mechanics": 51,
+      "gamesense": 65,
+      "teamfighting": 64,
+      "laning": 66,
+      "versatility": 52
+    },
+    "value": 107
+  },
+  {
+    "riotId": "S2mIE100LeSH#sigma",
+    "leaguePoints": 1069,
+    "rarity": "common",
+    "position": "Support",
+    "attributes": {
+      "mechanics": 57,
+      "gamesense": 67,
+      "teamfighting": 67,
+      "laning": 54,
+      "versatility": 53
+    },
+    "value": 106
+  },
+  {
+    "riotId": "Aurelion Sol God#EUW",
+    "leaguePoints": 1069,
+    "rarity": "common",
+    "position": "Jungle",
+    "attributes": {
+      "mechanics": 64,
+      "gamesense": 55,
+      "teamfighting": 59,
+      "laning": 65,
+      "versatility": 54
+    },
+    "value": 106
+  },
+  {
+    "riotId": "Yami Sukehiro#3309",
+    "leaguePoints": 1068,
+    "rarity": "common",
+    "position": "Top",
+    "attributes": {
+      "mechanics": 59,
+      "gamesense": 53,
+      "teamfighting": 55,
+      "laning": 55,
+      "versatility": 64
+    },
+    "value": 106
+  },
+  {
+    "riotId": "Akanania#1213",
+    "leaguePoints": 1066,
+    "rarity": "common",
+    "position": "Jungle",
+    "attributes": {
+      "mechanics": 52,
+      "gamesense": 58,
+      "teamfighting": 54,
+      "laning": 66,
+      "versatility": 64
+    },
+    "value": 106
+  },
+  {
+    "riotId": "eLS Louis#atlas",
+    "leaguePoints": 1066,
+    "rarity": "common",
+    "position": "Mid",
+    "attributes": {
+      "mechanics": 52,
+      "gamesense": 69,
+      "teamfighting": 65,
+      "laning": 51,
+      "versatility": 58
+    },
+    "value": 106
+  },
+  {
+    "riotId": "raikquaza#kata",
+    "leaguePoints": 1066,
+    "rarity": "common",
+    "position": "Top",
+    "attributes": {
+      "mechanics": 57,
+      "gamesense": 59,
+      "teamfighting": 61,
+      "laning": 67,
+      "versatility": 58
+    },
+    "value": 106
+  },
+  {
+    "riotId": "MIDKING#0303",
+    "leaguePoints": 1065,
+    "rarity": "common",
+    "position": "Mid",
+    "attributes": {
+      "mechanics": 57,
+      "gamesense": 58,
+      "teamfighting": 54,
+      "laning": 66,
+      "versatility": 50
+    },
+    "value": 106
+  },
+  {
+    "riotId": "hesszero#PAWEL",
+    "leaguePoints": 1064,
+    "rarity": "common",
+    "position": "Top",
+    "attributes": {
+      "mechanics": 54,
+      "gamesense": 67,
+      "teamfighting": 65,
+      "laning": 63,
+      "versatility": 64
+    },
+    "value": 106
+  },
+  {
+    "riotId": "Évangelyne#BELGE",
+    "leaguePoints": 1064,
+    "rarity": "common",
+    "position": "ADC",
+    "attributes": {
+      "mechanics": 56,
+      "gamesense": 58,
+      "teamfighting": 51,
+      "laning": 55,
+      "versatility": 56
+    },
+    "value": 106
+  },
+  {
+    "riotId": "nmvz#5548",
+    "leaguePoints": 1063,
+    "rarity": "common",
+    "position": "Mid",
+    "attributes": {
+      "mechanics": 59,
+      "gamesense": 62,
+      "teamfighting": 68,
+      "laning": 60,
+      "versatility": 52
+    },
+    "value": 106
+  },
+  {
+    "riotId": "eeZaZ#333",
+    "leaguePoints": 1061,
+    "rarity": "common",
+    "position": "ADC",
+    "attributes": {
+      "mechanics": 52,
+      "gamesense": 64,
+      "teamfighting": 52,
+      "laning": 57,
+      "versatility": 65
+    },
+    "value": 106
+  },
+  {
+    "riotId": "Forstie#UWU",
+    "leaguePoints": 1061,
+    "rarity": "common",
+    "position": "Top",
+    "attributes": {
+      "mechanics": 69,
+      "gamesense": 59,
+      "teamfighting": 68,
+      "laning": 59,
+      "versatility": 55
+    },
+    "value": 106
+  },
+  {
+    "riotId": "YOUAREPERFECT#PRFCT",
+    "leaguePoints": 1060,
+    "rarity": "common",
+    "position": "Top",
+    "attributes": {
+      "mechanics": 62,
+      "gamesense": 61,
+      "teamfighting": 52,
+      "laning": 68,
+      "versatility": 53
+    },
+    "value": 106
+  },
+  {
+    "riotId": "EŞREF TEK#BRKN",
+    "leaguePoints": 1059,
+    "rarity": "common",
+    "position": "Top",
+    "attributes": {
+      "mechanics": 67,
+      "gamesense": 68,
+      "teamfighting": 60,
+      "laning": 64,
+      "versatility": 51
+    },
+    "value": 105
+  },
+  {
+    "riotId": "Faz#EUW2",
+    "leaguePoints": 1054,
+    "rarity": "common",
+    "position": "ADC",
+    "attributes": {
+      "mechanics": 68,
+      "gamesense": 67,
+      "teamfighting": 68,
+      "laning": 56,
+      "versatility": 66
+    },
+    "value": 105
+  },
+  {
+    "riotId": "Spoodersussi v3#EUW",
+    "leaguePoints": 1044,
+    "rarity": "common",
+    "position": "Support",
+    "attributes": {
+      "mechanics": 59,
+      "gamesense": 52,
+      "teamfighting": 54,
+      "laning": 55,
+      "versatility": 65
+    },
+    "value": 104
+  }
+]

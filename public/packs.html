@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ladder Warriors - My Packs</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/cards.css">
+    <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Ladder Warriors</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="market.html">Market</a></li>
+                <li><a href="collection.html">Collection</a></li>
+                <li><a href="packs.html" class="active">Packs</a></li>
+            </ul>
+        </nav>
+        <div class="user-area">
+            <div class="currency-display">
+                <span id="currency-amount">0</span>
+                <span class="currency-icon">💰</span>
+            </div>
+            <div class="auth-buttons">
+                <a href="login.html" id="login-btn" class="btn">Login</a>
+                <a href="register.html" id="register-btn" class="btn">Register</a>
+                <button id="logout-btn" class="btn hidden">Logout</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section>
+            <h2>My Packs</h2>
+            <div class="auth-message hidden" id="login-required-message">
+                <p>Please <a href="login.html">login</a> or <a href="register.html">register</a> to view your packs.</p>
+            </div>
+            
+            <div class="packs-container" id="my-packs-container">
+                <!-- Packs will be loaded here -->
+                <div class="loading">Loading your packs...</div>
+            </div>
+            
+            <div class="no-packs-message hidden" id="no-packs-message">
+                <p>You don't have any packs yet. Visit the <a href="shop.html">Shop</a> to purchase some!</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Ladder Warriors - League of Legends Challenger Cards</p>
+        
+    </footer>
+    
+    <!-- Pack opening overlay template -->
+    <div class="pack-opening-container hidden" id="pack-opening-overlay">
+        <div class="pack-stage" id="pack-stage">
+            <div class="pack" id="pack">
+                <div class="pack-front">
+                    <div class="pack-image" id="pack-image"></div>
+                    <div class="pack-name" id="pack-name">Bronze Pack</div>
+                </div>
+                <div class="pack-back">
+                    <div class="spinner"></div>
+                </div>
+            </div>
+        </div>
+        <p class="pack-opening-instructions" id="pack-instructions">Click the pack to open</p>
+        
+        <div class="cards-reveal hidden" id="cards-reveal">
+            <div class="reveal-card" id="card-1"></div>
+            <div class="reveal-card" id="card-2"></div>
+            <div class="reveal-card" id="card-3"></div>
+            
+            <div class="reveal-controls">
+                <button class="btn" id="reveal-prev">Previous</button>
+                <button class="btn btn-primary" id="reveal-next">Next</button>
+                <button class="btn hidden" id="reveal-finish">Finish</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Check authentication status
+            checkAuthStatus().then(result => {
+                if (result.isLoggedIn) {
+                    updateUserInterface();
+                    loadUserPacks();
+                } else {
+                    // Show login required message
+                    document.getElementById('login-required-message').classList.remove('hidden');
+                    document.getElementById('my-packs-container').classList.add('hidden');
+                }
+            });
+            
+            // Load user's packs
+            async function loadUserPacks() {
+                try {
+                    const response = await fetch('/api/packs', {
+                        method: 'GET',
+                        credentials: 'include'
+                    });
+                    
+                    if (response.ok) {
+                        const packs = await response.json();
+                        displayUserPacks(packs);
+                    } else {
+                        console.error('Failed to load packs');
+                    }
+                } catch (error) {
+                    console.error('Error loading packs:', error);
+                }
+            }
+            
+            // Display user's packs
+            function displayUserPacks(packs) {
+                const packsContainer = document.getElementById('my-packs-container');
+                packsContainer.innerHTML = '';
+                
+                // Check if user has any packs
+                const hasPacks = packs.some(pack => pack.owned > 0);
+                
+                if (!hasPacks) {
+                    document.getElementById('no-packs-message').classList.remove('hidden');
+                    return;
+                }
+                
+                // Create pack cards for each type of pack
+                packs.forEach(pack => {
+                    // Skip if user doesn't own any of this pack
+                    if (pack.owned === 0) return;
+                    
+                    const packCard = document.createElement('div');
+                    packCard.className = `pack-card ${pack.type}`;
+                    
+                    packCard.innerHTML = `
+                        <div class="pack-icon">${pack.type === 'diamond' ? '💎' : '📦'}</div>
+                        <h3 class="pack-name">${pack.type.charAt(0).toUpperCase() + pack.type.slice(1)} Pack</h3>
+                        <p class="pack-description">${pack.description}</p>
+                        <p class="pack-guarantee">${pack.guarantees}</p>
+                        <div class="pack-quantity">You own: <span class="pack-count">${pack.owned}</span></div>
+                        <button class="btn btn-primary open-pack-btn" data-pack-type="${pack.type}">Open Pack</button>
+                    `;
+                    
+                    packsContainer.appendChild(packCard);
+                });
+                
+                // Add event listeners to open pack buttons
+                const openButtons = document.querySelectorAll('.open-pack-btn');
+                openButtons.forEach(button => {
+                    button.addEventListener('click', handleOpenPack);
+                });
+            }
+            
+            // Handle opening a pack
+            async function handleOpenPack(event) {
+                const packType = event.target.getAttribute('data-pack-type');
+                
+                // Start pack opening animation
+                showPackOpeningOverlay(packType);
+                
+                // Get pack cards from server
+                try {
+                    const response = await fetch('/api/packs/open', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json'
+                        },
+                        credentials: 'include',
+                        body: JSON.stringify({ packType })
+                    });
+                    
+                    if (response.ok) {
+                        const result = await response.json();
+                        // Continue with card reveal after successful pack opening
+                        setTimeout(() => {
+                            revealCards(result.players);
+                        }, 1500); // Wait for pack flip animation
+                        
+                        // Update pack count in UI
+                        const packCountElement = event.target.parentElement.querySelector('.pack-count');
+                        const currentCount = parseInt(packCountElement.textContent);
+                        packCountElement.textContent = currentCount - 1;
+                        
+                        // Remove pack card if count reaches 0
+                        if (currentCount - 1 === 0) {
+                            setTimeout(() => {
+                                event.target.parentElement.remove();
+                                
+                                // Check if there are any packs left
+                                if (document.querySelector('.pack-card') === null) {
+                                    document.getElementById('no-packs-message').classList.remove('hidden');
+                                }
+                            }, 500);
+                        }
+                    } else {
+                        const error = await response.json();
+                        console.error('Failed to open pack:', error.message);
+                        hidePackOpeningOverlay();
+                        showError(error.message || 'Failed to open pack');
+                    }
+                } catch (error) {
+                    console.error('Error opening pack:', error);
+                    hidePackOpeningOverlay();
+                    showError('An error occurred while opening the pack');
+                }
+            }
+            
+            // Show pack opening overlay
+            function showPackOpeningOverlay(packType) {
+                const overlay = document.getElementById('pack-opening-overlay');
+                const packElement = document.getElementById('pack');
+                const packNameElement = document.getElementById('pack-name');
+                const packImageElement = document.getElementById('pack-image');
+                
+                // Set pack type and styling
+                packNameElement.textContent = `${packType.charAt(0).toUpperCase() + packType.slice(1)} Pack`;
+                packElement.className = `pack ${packType}`;
+                
+                // Show overlay
+                overlay.classList.remove('hidden');
+                
+                // Add click event to flip pack
+                packElement.addEventListener('click', flipPack, { once: true });
+            }
+            
+            // Flip the pack to reveal cards
+            function flipPack() {
+                const packElement = document.getElementById('pack');
+                const instructionsElement = document.getElementById('pack-instructions');
+                
+                packElement.classList.add('pack-flipped');
+                instructionsElement.textContent = 'Opening...';
+            }
+            
+            // Reveal cards one by one
+            function revealCards(players) {
+                const packStage = document.getElementById('pack-stage');
+                const cardsReveal = document.getElementById('cards-reveal');
+                const instructionsElement = document.getElementById('pack-instructions');
+                
+                // Hide pack and show cards container
+                packStage.classList.add('hidden');
+                cardsReveal.classList.remove('hidden');
+                instructionsElement.textContent = 'Revealing cards (1/3)';
+                
+                // Create card elements
+                const card1 = document.getElementById('card-1');
+                const card2 = document.getElementById('card-2');
+                const card3 = document.getElementById('card-3');
+                
+                const cardElements = [card1, card2, card3];
+                let currentCard = 0;
+                
+                // Create card content
+                players.forEach((player, index) => {
+                    cardElements[index].innerHTML = '';
+                    cardElements[index].appendChild(createCardElement(player));
+                });
+                
+                // Show first card
+                cardElements[currentCard].classList.add('revealed');
+                
+                // Add event listeners to navigation buttons
+                const prevButton = document.getElementById('reveal-prev');
+                const nextButton = document.getElementById('reveal-next');
+                const finishButton = document.getElementById('reveal-finish');
+                
+                prevButton.addEventListener('click', showPreviousCard);
+                nextButton.addEventListener('click', showNextCard);
+                finishButton.addEventListener('click', finishReveal);
+                
+                // Previous card function
+                function showPreviousCard() {
+                    if (currentCard > 0) {
+                        cardElements[currentCard].classList.remove('revealed');
+                        currentCard--;
+                        cardElements[currentCard].classList.add('revealed');
+                        updateNavButtons();
+                        instructionsElement.textContent = `Revealing cards (${currentCard + 1}/3)`;
+                    }
+                }
+                
+                // Next card function
+                function showNextCard() {
+                    if (currentCard < players.length - 1) {
+                        cardElements[currentCard].classList.remove('revealed');
+                        currentCard++;
+                        cardElements[currentCard].classList.add('revealed');
+                        updateNavButtons();
+                        instructionsElement.textContent = `Revealing cards (${currentCard + 1}/3)`;
+                    }
+                }
+                
+                // Update navigation buttons state
+                function updateNavButtons() {
+                    prevButton.disabled = currentCard === 0;
+                    
+                    if (currentCard === players.length - 1) {
+                        nextButton.classList.add('hidden');
+                        finishButton.classList.remove('hidden');
+                    } else {
+                        nextButton.classList.remove('hidden');
+                        finishButton.classList.add('hidden');
+                    }
+                }
+                
+                // Finish card reveal
+                function finishReveal() {
+                    hidePackOpeningOverlay();
+                }
+                
+                // Initialize buttons state
+                updateNavButtons();
+            }
+            
+            // Hide pack opening overlay
+            function hidePackOpeningOverlay() {
+                const overlay = document.getElementById('pack-opening-overlay');
+                const packElement = document.getElementById('pack');
+                const cardsReveal = document.getElementById('cards-reveal');
+                const packStage = document.getElementById('pack-stage');
+                
+                // Reset all elements
+                overlay.classList.add('hidden');
+                setTimeout(() => {
+                    packElement.classList.remove('pack-flipped');
+                    cardsReveal.classList.add('hidden');
+                    packStage.classList.remove('hidden');
+                    
+                    // Reset card reveals
+                    document.querySelectorAll('.reveal-card').forEach(card => {
+                        card.classList.remove('revealed');
+                        card.innerHTML = '';
+                    });
+                    
+                    document.getElementById('pack-instructions').textContent = 'Click the pack to open';
+                }, 500);
+            }
+        });
+    </script>
+    
+    <style>
+        /* Packs page specific styles */
+        .packs-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        
+        .pack-card {
+            background-color: var(--card-bg-color);
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            border: 2px solid var(--card-border-color);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .pack-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+        }
+        
+        .pack-card.bronze {
+            border-color: #cd7f32;
+        }
+        
+        .pack-card.silver {
+            border-color: #c0c0c0;
+        }
+        
+        .pack-card.gold {
+            border-color: #ffd700;
+        }
+        
+        .pack-card.platinum {
+            border-color: #e5e4e2;
+        }
+        
+        .pack-card.diamond {
+            border-color: #b9f2ff;
+            box-shadow: 0 0 15px rgba(185, 242, 255, 0.3);
+        }
+        
+        .pack-icon {
+            font-size: 48px;
+            margin-bottom: 15px;
+        }
+        
+        .pack-name {
+            font-size: 20px;
+            color: var(--secondary-color);
+            margin-bottom: 10px;
+        }
+        
+        .pack-description, .pack-guarantee {
+            margin-bottom: 10px;
+            font-size: 14px;
+        }
+        
+        .pack-guarantee {
+            font-style: italic;
+            color: var(--accent-color);
+        }
+        
+        .pack-quantity {
+            font-size: 18px;
+            font-weight: bold;
+            margin: 15px 0;
+        }
+        
+        .pack-count {
+            color: var(--secondary-color);
+        }
+        
+        .open-pack-btn {
+            margin-top: 15px;
+            width: 100%;
+        }
+        
+        .no-packs-message {
+            text-align: center;
+            padding: 30px;
+            background-color: rgba(255, 255, 255, 0.05);
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+    </style>
+</body>
+</html>
